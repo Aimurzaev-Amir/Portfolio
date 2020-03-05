@@ -50,54 +50,100 @@
 
     <!-- About me main block START -->
 
-    <div class="About-me-main">
-        <div class="about-me-main-text">
-            <h1>I'm aimurzayev amir, an
-                front-end Developer &
-                UI/UX Designer.</h1>
+    <div class="about-me-main">
+      <div class="about-me-main-text">
+        <h1>I'm aimurzayev amir, an front-end Developer & UI/UX Designer.</h1>
+        <div id="typed-strings">
+          <p>I code cool websites</p>
+          <p>Just call me maybe</p>
+          <p>I draw a lot in my spare time</p>
+          <p>I like everything space related</p>
         </div>
-        <div class="about-me-main-img">
-            <img src="img/About-me-main.png" alt="">
-        </div>
+        <span id="typed"></span>
+      </div>
+      <div class="mouse-scroll"><div class="scroll-button"></div></div>
     </div>
 
     <!-- About me main block END -->
 
+    <!-- About me intro block START -->
+
+    <div class="about-intro wrapper">
+      <div class="title-lines">
+        <hr class="line" />
+        <div class="title">
+          <h2 class="title5">About me</h2>
+        </div>
+        <hr class="line" />
+      </div>
+      <div class="about-info">
+        <div class="about-front-end">
+          <img src="img/about-me-page/about-me-front-end.svg" alt="" />
+          <h2>development</h2>
+          <p>
+            I'm a coder first, designer second: I enjoy developing simple,
+            efficient and scalable websites that provide real value to the end
+            user. I'm passionate about quality code, best practices and
+            performance.
+          </p>
+        </div>
+        <div class="about-design">
+          <img src="img/about-me-page/about-me-design.svg" alt="" />
+          <h2>design</h2>
+          <p>
+            I also have a passion for web design. If you require a fresh, slick
+            design for a new brand or you need to update an existing site, look
+            me up. I've formed an approach that helps me create unique work;
+            work that you can't get from a template.
+          </p>
+        </div>
+      </div>
+      <div class="button-page">
+        <a href=""><button><img src="img/download.svg" alt=""> Download resume</button></a>
+      </div>
+    </div>
+
+    <!-- About me intro block END -->
 
     <!-- Footer block START -->
 
     <div class="footer">
-        <div class="logo-footer" data-aos="zoom-in-up">
-          <img src="img/Logo.svg" alt="" />
-        </div>
-        <div id="footer-navbar" class="navbar" data-aos="zoom-in-up" data-aos-delay="100">
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="#" class="nav-item-link">About me</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-item-link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-item-link">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-item-link">Contacts</a>
-            </li>
-          </ul>
-        </div>
-        <p data-aos="zoom-in-up" data-aos-delay="200">© 2020 Amir Aimurzayev. All rights reserved.</p>
-        <div class="footer-social" data-aos="zoom-in-up" data-aos-delay="300">
-          <img src="img/footer-icons/linkedin-footer.svg" alt="" />
-          <img src="img/footer-icons/behance-footer.svg" alt="" />
-          <img src="img/footer-icons/vk-footer.svg" alt="" />
-          <img src="img/footer-icons/instagram-footer.svg" alt="" />
-        </div>
+      <div class="logo-footer" data-aos="zoom-in-up">
+        <img src="img/Logo.svg" alt="" />
       </div>
-  
-      <!-- Footer block END -->
+      <div
+        id="footer-navbar"
+        class="navbar"
+        data-aos="zoom-in-up"
+        data-aos-delay="100"
+      >
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#" class="nav-item-link">About me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item-link">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <p data-aos="zoom-in-up" data-aos-delay="200">
+        © 2020 Amir Aimurzayev. All rights reserved.
+      </p>
+      <div class="footer-social" data-aos="zoom-in-up" data-aos-delay="300">
+        <img src="img/footer-icons/linkedin-footer.svg" alt="" />
+        <img src="img/footer-icons/behance-footer.svg" alt="" />
+        <img src="img/footer-icons/vk-footer.svg" alt="" />
+        <img src="img/footer-icons/instagram-footer.svg" alt="" />
+      </div>
+    </div>
 
-
+    <!-- Footer block END -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -106,5 +152,7 @@
     <script src="libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="libs/owlCarousel/owl.carousel.min.js"></script>
     <script src="js/owlCarusel.js"></script>
+    <script src="libs/typed.js"></script>
+    <script src="js/typing.js"></script>
   </body>
 </html>

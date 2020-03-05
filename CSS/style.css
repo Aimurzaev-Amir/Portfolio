@@ -4,8 +4,8 @@
   padding: 0;
   margin: 0;
 }
-body{
-  background-color: #F5F5F5;
+body {
+  background-color: #f5f5f5;
 }
 header {
   overflow: hidden;
@@ -52,26 +52,26 @@ header {
   content: "[";
   animation: navhover1 0.3s ease-out forwards;
 }
-.nav-item :hover:after{
+.nav-item :hover:after {
   position: absolute;
   right: -5px;
   content: "]";
   animation: navhover2 0.3s ease-out forwards;
 }
-@keyframes navhover1{
-  from{
+@keyframes navhover1 {
+  from {
     left: 50%;
   }
   to {
-    left:-5px;
+    left: -5px;
   }
 }
-@keyframes navhover2{
-  from{
+@keyframes navhover2 {
+  from {
     right: 50%;
   }
   to {
-    right:-5px;
+    right: -5px;
   }
 }
 /*--------- Navigation menu block END---------- */
@@ -103,26 +103,26 @@ header {
     background-repeat: no-repeat;
     left: 50%;
 } */
-.main-img-bg{
+.main-img-bg {
   background-color: #fff;
 }
-.main-img{
+.main-img {
   position: relative;
 }
 .container {
   text-align: center;
 }
-.container img{
+.container img {
   width: 100%;
 }
-.main-social{
+.main-social {
   position: absolute;
   display: flex;
   flex-direction: column;
   top: 20%;
   right: 0px;
 }
-.main-social img{
+.main-social img {
   margin-bottom: 35px;
 }
 
@@ -161,18 +161,18 @@ header {
   font-weight: normal;
   font-size: 18px;
 }
-.button-page{
+.button-page {
   text-align: center;
 }
-.button-page button{
+.button-page button {
   font-weight: normal;
   font-size: 16px;
   text-transform: uppercase;
   padding: 16px 35px;
   border: 1px solid #000;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
-.button-page button:hover{
+.button-page button:hover {
   background-color: #000;
   border: 1px solid #fff;
   color: #fff;
@@ -205,11 +205,11 @@ header {
   height: 226px;
   margin-right: 20px;
   border-radius: 5px;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25),
     -2px -2px 10px rgba(0, 0, 0, 0.25);
 }
-.skills-cards :last-child{
+.skills-cards :last-child {
   margin-right: 0px;
 }
 .skill-card img {
@@ -243,10 +243,10 @@ header {
   justify-content: space-between;
   margin-bottom: 40px;
 }
-.work-card{
+.work-card {
   margin-right: 20px;
 }
-.work-cards :last-child{
+.work-cards :last-child {
   margin-right: 0px;
 }
 .card-header {
@@ -277,7 +277,7 @@ header {
   height: 1.5px;
   margin-bottom: 1px;
 }
-.work-card .card-body img{
+.work-card .card-body img {
   width: 100%;
 }
 
@@ -303,10 +303,10 @@ header {
   border-radius: 5px;
   margin-right: 20px;
 }
-.articles-cards :last-child{
+.articles-cards :last-child {
   margin-right: 0px;
 }
-.article-card .article-img img{
+.article-card .article-img img {
   width: 100%;
 }
 .article-date {
@@ -474,21 +474,20 @@ header {
   color: #fff;
   text-align: center;
 }
-.footer-social{
+.footer-social {
   margin-top: 21px;
   display: flex;
   align-items: flex-start;
 }
-.footer-social img{
+.footer-social img {
   margin-right: 30px;
 }
-.footer-social img:last-child{
+.footer-social img:last-child {
   margin-right: 0px;
 }
 /* Footer block END */
 
 /*--------- Ways to contact me block END---------- */
-
 
 @media (max-width: 1180px) {
   .navigation,
@@ -497,13 +496,13 @@ header {
   .skills,
   .latest-works,
   .latest-blog-articles,
-  .contact-me{
+  .contact-me {
     margin-left: 30px;
     margin-right: 30px;
   }
 }
 @media (max-width: 1000px) {
-  .button-page{
+  .button-page {
     text-align: center;
   }
   .skills-cards {
@@ -511,10 +510,10 @@ header {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .skill-card{
+  .skill-card {
     margin-bottom: 20px;
   }
-  .skills-cards :last-child{
+  .skills-cards :last-child {
     margin-right: 20px;
   }
   .contact-info {
@@ -522,13 +521,13 @@ header {
   }
 }
 
-@media (max-width: 750px){
-  #main-navbar{
+@media (max-width: 750px) {
+  #main-navbar {
     display: none;
   }
 }
 
-@media (max-width: 585px){
+@media (max-width: 585px) {
   .title h2 {
     padding-left: 20px;
     padding-right: 20px;
@@ -554,15 +553,15 @@ header {
     display: grid;
     grid-template-columns: auto;
   }
-  .skill-card{
+  .skill-card {
     margin-right: 0px;
     margin-bottom: 20px;
   }
-  .skills-cards :last-child{
+  .skills-cards :last-child {
     margin-right: 0px;
     margin-bottom: 0px;
   }
-  .latest-blog-articles{
+  .latest-blog-articles {
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -578,16 +577,115 @@ header {
     flex-direction: column;
     width: unset;
   }
-  .contact-me .contact-info{
+  .contact-me .contact-info {
     margin-top: 21px;
   }
   .nav-item {
     position: relative;
     margin-right: 10px;
   }
-} 
+}
 
 /* -------------Page About Me START ----------*/
 
-/* -------------Page About Me END ----------*/
+/* About me main block START */
 
+.about-me-main {
+  display: flex;
+  position: relative;
+  height: 650px;
+  background-color: #fff;
+  background-image: url("/img/About-me-main.png");
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.about-me-main-text {
+  margin-top: 142px;
+  margin-left: 61px;
+  z-index: 99;
+  max-width: 681px;
+}
+.about-me-main-text h1 {
+  font-weight: 600;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+.about-me-main .about-me-main-text span {
+  font-weight: 600;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.mouse-scroll {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  bottom: 16px;
+  width: 25px;
+  height: 45px;
+  border: 0.6px solid #000000;
+  border-radius: 22px;
+}
+.scroll-button {
+  margin-top: 11px;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 100%;
+}
+
+/* About me main block END */
+
+/* About me intro block START */
+
+.about-intro {
+  margin-top: 50px;
+}
+.title5 {
+  width: 205px;
+}
+.about-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+.about-front-end,
+.about-design {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 495px;
+}
+.about-front-end{
+  margin-top: -20px;
+  margin-right: 36px;
+}
+.about-info h2 {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.about-info p {
+  margin-top: 30px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+/* About me intro block END */
+
+/*  */
+
+
+/* -------------Page About Me END ----------*/
