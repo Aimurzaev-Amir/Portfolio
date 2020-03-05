@@ -8,17 +8,26 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="CSS/style.css" />
-    <title>Aimurzayev Amir</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="libs/owlCarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="libs/owlCarousel/assets/owl.theme.default.css"
+    />
+    <title>Aimurzayev Amir | Front End Developer & UI/UX Designer</title>
   </head>
   <body>
     <header>
       <!-- Navigation block START -->
-      <div class="navigation-bg">
+      <div class="navigation-bg" data-aos="slide-down" data-aos-duration="1500">
         <div class="navigation wrapper">
           <div class="logo">
             <img src="img/Logo.svg" alt="" />
           </div>
-          <div class="navbar">
+          <div id="main-navbar" class="navbar">
             <ul class="nav">
               <li class="nav-item">
                 <a href="#" class="nav-item-link">About me</a>
@@ -40,10 +49,22 @@
     <!-- Navigation block END -->
 
     <!-- Photo block + Parallax -->
-
-    <div class="container">
+    <div class="main-img-bg">
+      <div class="main-img wrapper">
+      <div class="container">
       <img src="img/main.png" alt="" />
     </div>
+    <div class="main-social">
+      <img src="img/main-social/email-icon.svg" alt="">
+      <img src="img/main-social/linkedin-icon.svg" alt="">
+      <img src="img/main-social/behance-icon.svg" alt="">
+      <img src="img/main-social/vk-icon.svg" alt="">
+      <img src="img/main-social/instagram-icon.svg" alt="">
+    </div>
+    </div>
+    </div>
+    
+    
 
     <!-- Photo block + Parallax END -->
 
@@ -57,7 +78,7 @@
         </div>
         <hr class="line" />
       </div>
-      <div class="intro-text">
+      <div class="intro-text" data-aos="fade-up" data-aos-duration="2000">
         <p>
           Hi I am a web developer & designer based in Almaty in Kazakhstan. I
           believe working in a multi-disciplined approach brings creative
@@ -70,9 +91,10 @@
       </div>
       <div class="button-page">
         <a href=""><button>LEARN MORE ABOUT ME</button></a>
-        <a href=""
-          >
-          <button > <img src="img/download.svg" alt="" />Download resume</button></a
+        <a href=""></a>
+          <button>
+            <img src="img/download.svg" alt="" />Download resume
+          </button></a
         >
       </div>
     </div>
@@ -91,24 +113,24 @@
       </div>
 
       <div class="skills-cards">
-        <div class="skill-card">
-          <img src="img/skill-card-idea.svg" alt="" />
+        <div class="skill-card" data-aos="flip-right">
+          <img src="img/idea-skills.svg" alt="" />
           <p>Great ideas</p>
         </div>
-        <div class="skill-card">
-          <img src="img/skill-card-design.svg" alt="" />
+        <div class="skill-card" data-aos="flip-right" data-aos-delay="200">
+          <img src="img/design-skills.svg" alt="" />
           <p>Professional design</p>
         </div>
-        <div class="skill-card">
-          <img src="img/skill-card-front-end.svg" alt="" />
+        <div class="skill-card" data-aos="flip-right" data-aos-delay="350">
+          <img src="img/Front-end-skills.svg" alt="" />
           <p>HTMl + CSS + JS</p>
         </div>
-        <div class="skill-card">
-          <img src="img/skill-card-adaptive.svg" alt="" />
+        <div class="skill-card" data-aos="flip-right" data-aos-delay="500">
+          <img src="img/Adaptive-skills.svg" alt="" />
           <p>Clean code and responsive layout</p>
         </div>
-        <div class="skill-card">
-          <img src="img/skill-card-browser.svg" alt="" />
+        <div class="skill-card" data-aos="flip-right" data-aos-delay="650">
+          <img src="img/cross-browsers-skills.svg" alt="" />
           <p>Browser Compatibility</p>
         </div>
       </div>
@@ -198,7 +220,7 @@
         <hr class="line" />
       </div>
 
-      <div class="articles-cards">
+      <div class="articles-cards owl-theme">
         <div class="article-card">
           <div class="article-img">
             <img src="img/articles-cards/article1.png" alt="" />
@@ -335,10 +357,10 @@
     <!-- Footer block START -->
 
     <div class="footer">
-      <div class="logo-footer">
+      <div class="logo-footer" data-aos="zoom-in-up">
         <img src="img/Logo.svg" alt="" />
       </div>
-      <div class="navbar">
+      <div id="footer-navbar" class="navbar" data-aos="zoom-in-up" data-aos-delay="100">
         <ul class="nav">
           <li class="nav-item">
             <a href="#" class="nav-item-link">About me</a>
@@ -354,8 +376,8 @@
           </li>
         </ul>
       </div>
-      <p>© 2020 Amir Aimurzayev. All rights reserved.</p>
-      <div class="footer-social">
+      <p data-aos="zoom-in-up" data-aos-delay="200">© 2020 Amir Aimurzayev. All rights reserved.</p>
+      <div class="footer-social" data-aos="zoom-in-up" data-aos-delay="300">
         <img src="img/footer-icons/linkedin-footer.svg" alt="" />
         <img src="img/footer-icons/behance-footer.svg" alt="" />
         <img src="img/footer-icons/vk-footer.svg" alt="" />
@@ -363,8 +385,16 @@
       </div>
     </div>
 
-    <!-- Footer block START -->
+    <!-- Footer block END -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libs/owlCarousel/owl.carousel.min.js"></script>
 
     <script src="js/main-slider.js"></script>
+    <script src="js/owlCarusel.js"></script>
   </body>
 </html>
