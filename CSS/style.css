@@ -133,7 +133,6 @@ header {
 .title-lines {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
 }
 .title h2 {
   padding-left: 45px;
@@ -145,6 +144,9 @@ header {
 }
 .title1 {
   width: 360px;
+}
+.title-lines1{
+  margin-bottom: 50px;
 }
 .line {
   width: 100%;
@@ -652,8 +654,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 90px;
   margin-bottom: 40px;
+}
+.title-lines2{
+  margin-bottom: 90px;
 }
 .about-front-end,
 .about-design {
@@ -662,7 +666,7 @@ header {
   flex-direction: column;
   max-width: 495px;
 }
-.about-front-end{
+.about-front-end {
   margin-top: -20px;
   margin-right: 36px;
 }
@@ -685,7 +689,236 @@ header {
 
 /* About me intro block END */
 
-/*  */
+/* Graph-skills block START */
 
+.graph-overlay {
+  margin-top: 50px;
+}
+.title6 {
+  width: 205px;
+}
+.graph {
+  display: flex;
+  width: 100%;
+  height: 450px;
+}
+.ticks p {
+  margin-bottom: 87px;
+  font-weight: normal;
+  font-size: 22px;
+  color: #4d6172;
+  text-align: right;
+  margin-right: 10px;
+}
+.ticks :last-child {
+  margin-bottom: 0px;
+}
+.graph-lines {
+  position: relative;
+  z-index: 9;
+  margin-top: 15px;
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid rgba(163, 158, 158, 0.72);
+  border-bottom: 1px solid rgba(163, 158, 158, 0.72);
+}
+.graph-lines .ticks-lines :first-child{
+  margin-top: 110px;
+}
+.graph-lines .ticks-lines hr {
+  margin-bottom: 110px;
+}
+.bars {
+  padding-left: 35px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+}
+.bar {
+  position: relative;
+  width: 16%;
+  color: #fff;
+  border-radius: 5px 5px 0px 0px;
+}
+.bar-text {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 35px;
+}
+.bar-text-procent {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 55px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.bar-text-procent span {
+  font-size: 25px;
+}
+.bar-text-skill {
+  font-weight: normal;
+  font-size: 16px;
+}
+#bar1 {
+  height: 95%;
+  background: linear-gradient(180deg, #afdbd6, #5fb2a8 50%);
+}
+#bar2 {
+  height: 85%;
+  background: linear-gradient(180deg, #f3dbd5, #e2af9f 50%);
+}
+#bar3 {
+  height: 50%;
+  background: linear-gradient(180deg, #fcda8c, #dfae37 50%);
+}
+#bar4 {
+  height: 60%;
+  background: linear-gradient(180deg, #c59b66, #dcb386 50%);
+}
+#bar5 {
+  height: 90%;
+  background: linear-gradient(180deg, #d96c6b, #ca4645 50%);
+}
+
+/* Graph-skills block END */
+
+/* Education block START */
+
+.cards-edu-overlay{
+  position: relative;
+  margin-top: 110px;
+}
+.title-lines3{
+  margin-bottom: 150px;
+}
+.title7{
+  width: 216px;
+}
+.cards-edu-overlay .container-cards{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  transform: skewY(-6deg);
+}
+.cards-edu-overlay .container-cards .card-edu .card-edu-half{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.cards-edu-overlay .container-cards .card-edu .card-edu-half:before{
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background: #00c0f6;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.5s;
+}
+.cards-edu-overlay .container-cards .card-edu .card-edu-half:after{
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 15px;
+  height: 50%;
+  background: #00c0f6;
+  transform-origin: left;
+  transform: skewY(45deg);
+  transition: 0.5s;
+  border-bottom: 200px solid #d9d9d9;
+
+}
+.cards-edu-overlay .container-cards .card-edu .card-edu-half:hover{
+  transform: translateY(-40px);
+}
+.cards-edu-overlay .container-cards .card-edu .card-edu-half .imgBx{
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #00c7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+.cards-edu-overlay .container-cards .card-edu .card-edu-half .imgBx img{
+  max-width: 100px;
+}
+.cards-edu-overlay .container-cards .card-edu .card-edu-half .imgBx h3{
+  position: relative;
+  color: #fff;
+  margin-top: 20px;
+}
+.cards-edu-overlay .container-cards .card-edu .card-edu-half .content-edu {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  color: #777;
+  background: #fff;
+  text-align: center;
+  padding-top: 60px;
+}
+.cards-edu-overlay .container-cards .card-edu .card-edu-half .content-edu p{
+  padding-bottom: 10px;
+}
+#design-studio span{
+  font-size: 10px;
+}
+.cards-edu-overlay .container-cards .card-edu .card-edu-half .content-edu :before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(transparent, transparent, rgba(0,0,0,0.1));
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: -1;
+}
+.cards-edu-overlay .container-cards .card-edu .card-edu-half .content-edu :hover :before{
+  transform: translateX(40px) skewX(45deg);
+  filter: blur(5px);
+  opacity: 0.5;
+}
+.cards-edu-overlay .container-cards .card-edu .card-edu-half .content-edu :nth-child(1){
+  z-index: 3;
+}
+.cards-edu-overlay .container-cards .card-edu .card-edu-half .content-edu :nth-child(2){
+  z-index: 2;
+}
+.cards-edu-overlay .container-cards .card-edu .card-edu-half .content-edu :nth-child(3){
+  z-index: 1;
+}
+
+/* Education block END */
 
 /* -------------Page About Me END ----------*/
+
+/* Adaptive for page About me */
+
+@media (max-width: 1000px) {
+  .container-cards .card-edu {
+    margin-bottom: 50px;
+  }
+  .container-cards :last-child{
+    margin-bottom: 0px;
+  }
+}
