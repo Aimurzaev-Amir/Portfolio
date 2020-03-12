@@ -10,14 +10,14 @@ body {
 header {
   overflow: hidden;
 }
+.nav-overlay{
+  background: #000;
+}
 .wrapper {
   max-width: 1180px;
   margin: 0 auto;
 }
 /*--------- Navigation menu block START---------- */
-header {
-  background: #000;
-}
 nav{
   display: flex;
   justify-content: space-between;
@@ -41,6 +41,7 @@ nav{
   display: none;
 }
 .nav-item {
+  position: relative;
   margin-right: 50px;
 }
 .nav-item:last-of-type {
@@ -557,15 +558,13 @@ nav{
     margin: 5px;
   }
   .main-nav .hamburger{
-    position: absolute;
+    position: relative;
     cursor: pointer;
-    right: 30px;
-    top:50%;
-    transform: translate(-5%, -50%);
+    margin-right: 30px;
+    margin-top: 15px;
     z-index: 999;
   }
   .main-nav{
-    position: relative;
     align-items: unset;
     height: 62px;
   }

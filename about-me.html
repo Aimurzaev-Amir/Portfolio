@@ -20,9 +20,9 @@
     <title>About Aimurzayev Amir | Front End Developer & UI/UX Designer</title>
   </head>
   <body>
-    <header id="about-me-page">
+    <!-- <header id="about-me-page"> -->
       <!-- Navigation block START -->
-      <div class="navigation-bg" data-aos="slide-down" data-aos-duration="1500">
+      <!-- <div class="navigation-bg" data-aos="slide-down" data-aos-duration="1500">
         <div class="navigation wrapper">
           <div class="logo">
             <img src="img/Logo.svg" alt="" />
@@ -58,6 +58,51 @@
       </div>
     </div>
     <a href="#"><div class="mouse-scroll"><div class="scroll-button"></div></div></a> 
+    </header> -->
+    <header id="about-me-page">
+      <div class="nav-overlay">
+        <nav class="wrapper main-nav">
+      <div class="logo">
+          <img class="logo-desktop" src="img/Logo.svg" alt="">
+          <img class="logo-mobile" src="img/Logo-mobile.svg" alt="">
+      </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <hr>
+        <li class="nav-item"><a href="#" class="nav-item-link">About me</a></li>
+        <hr>
+        <li class="nav-item"><a href="#" class="nav-item-link">Portfolio</a></li>
+        <hr>
+        <li class="nav-item"><a href="#" class="nav-item-link">Blog</a></li>
+        <hr>
+        <li class="nav-item"><a href="#" class="nav-item-link">Contacts</a></li>
+        <hr>
+        <ul class="nav-social">
+          <li class="social-item" ><img src="img/footer-icons/linkedin-footer.svg" alt=""></li>
+          <li class="social-item"><img src="img/footer-icons/behance-footer.svg" alt=""></li>
+          <li class="social-item"><img src="img/footer-icons/vk-footer.svg" alt=""></li>
+          <li class="social-item"><img src="img/footer-icons/instagram-footer.svg" alt=""></li>
+        </ul>
+      </ul>
+    </nav>
+      </div>
+      
+    <div class="about-me-main">
+      <div class="about-me-main-text">
+        <h1>I'm aimurzayev amir, an front-end Developer & UI/UX Designer.</h1>
+        <div id="typed-strings">
+          <p>I code cool websites</p>
+          <p>Just call me maybe</p>
+          <p>I love Tesla</p>
+          <p>I like everything space related</p>
+        </div>
+        <span id="typed"></span>
+      </div>
+    </div>
     </header>
     <!-- Navigation block END -->
 
@@ -336,27 +381,14 @@
       <div class="logo-footer" data-aos="zoom-in-up">
         <img src="img/Logo.svg" alt="" />
       </div>
-      <div
-        id="footer-navbar"
-        class="navbar"
-        data-aos="zoom-in-up"
-        data-aos-delay="100"
-      >
-        <ul class="nav">
-          <li class="nav-item">
-            <a href="#" class="nav-item-link">About me</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-item-link">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-item-link">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-item-link">Contacts</a>
-          </li>
+      <nav class="footer-nav" data-aos="zoom-in-up" data-aos-delay="100">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#" class="nav-item-link">About me</a></li>
+          <li class="nav-item"><a href="#" class="nav-item-link">Portfolio</a></li>
+          <li class="nav-item"><a href="#" class="nav-item-link">Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-item-link">Contacts</a></li>
         </ul>
-      </div>
+      </nav>
       <p data-aos="zoom-in-up" data-aos-delay="200">
         © 2020 Amir Aimurzayev. All rights reserved.
       </p>
@@ -378,6 +410,7 @@
     <script src="libs/owlCarousel/owl.carousel.min.js"></script>
     <script src="js/owlCarusel.js"></script>
     <script src="libs/typed.js"></script>
+    <script src="js/hamburger.js"></script>
     <script src="js/typing.js"></script>
   </body>
 </html>
