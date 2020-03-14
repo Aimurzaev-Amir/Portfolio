@@ -1247,8 +1247,9 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.work-info{
+.work-info {
   margin-top: 35px;
+  margin-right: 20px;
 }
 .work-info h1 {
   font-weight: 600;
@@ -1267,79 +1268,68 @@ header {
   padding-left: 23px;
   padding-right: 23px;
 }
-.work-img img{
+.work-img img {
   width: 100%;
+  min-width: 600px;
 }
-.owl-carousel {
-  position: relative;
-}
-
-
-
-.container {
+.swiper-container {
   margin-top: 90px;
-  overflow: hidden;
-  position: relative;
-  height: 35.1875rem;
 }
-
-.slideDiv{
-  position: relative;
+.swiper-slide {
+  max-width: 800px;
+  max-height: 411px;
 }
-.controls {
-  position: absolute;
-}
-
-.slideDiv,
-.slide {
-  width: 100%;
-  height: 100%;
-}
-
-
-.controls {
-  top: 18%;
-  right: 0;
-  padding: 0 0.63rem;
-  z-index: 5;
-  text-align: center;
-}
-
-.button { 
-  width: 0.9375rem;
-  height: 0.9375rem;
-  display: block;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: all ease .2s;
-  border: 1px solid #fff;
-  opacity: .6;
-  outline: none;
-  background-color: #333;
-}
-
-.button:not(:last-child) {
-  margin-bottom: 0.63rem;
-}
-
-
-.button:hover,
-.button:focus {
-  opacity: 1;
-}
-
-.selected {
-  background-color: #CB411F;
-}
-
-
-
 @media (max-width: 750px) {
   .work {
     display: grid;
   }
-  .work-info{
+  .work-info {
     margin: 0 auto;
   }
 }
 
+/*---------- Page 3 - Portfolio END -------*/
+
+/*---------- Page 4 - BeDentist-work START -------*/
+
+/* Main description block STARt */
+
+#work-header {
+  height: 100vh;
+}
+.work-intro {
+  position: relative;
+  background-image: url(../img/work-bedentist/main-img.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.work-main-logo {
+  position: relative;
+  text-align: center;
+  margin-top: -330px;
+}
+.work-main-logo img {
+  width: 100%;
+  max-width: 1059.42px;
+}
+.work-intro-text {
+  padding-top: 90px;
+  text-align: center;
+  max-width: 675px;
+  color: #fff;
+}
+.work-intro-text h1 {
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 28px;
+}
+.work-intro-text p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+/* Main description block STARt */
+
+/*---------- Page 4 - BeDentist-work START -------*/
