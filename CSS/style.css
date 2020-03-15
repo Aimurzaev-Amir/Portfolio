@@ -1292,8 +1292,6 @@ header {
 
 /*---------- Page 4 - BeDentist-work START -------*/
 
-/* Main description block STARt */
-
 #work-header {
   height: 100vh;
 }
@@ -1305,10 +1303,15 @@ header {
   background-repeat: no-repeat;
   height: 100vh;
 }
-.work-main-logo {
+
+/* Main description block STARt */
+
+.work-describer {
   position: relative;
+  margin-top: -30vh;
+}
+.work-main-logo {
   text-align: center;
-  margin-top: -330px;
 }
 .work-main-logo img {
   width: 100%;
@@ -1330,6 +1333,140 @@ header {
   font-size: 18px;
   line-height: 21px;
 }
-/* Main description block STARt */
+.work-main-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.work-overview {
+  max-width: 780px;
+}
+.work-overview h2 {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.work-overview p {
+  font-weight: normal;
+  font-size: 22px;
+  color: #6b6a6a;
+  margin-right: 20px;
+}
+.work-details {
+  max-width: 280px;
+  padding-left: 27px;
+  border-left: 1px solid #6b6a6a;
+}
+.work-details :last-child {
+  margin-bottom: 0;
+}
+.work-details h3 {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.work-details p {
+  font-weight: normal;
+  font-size: 18px;
+  color: #6b6a6a;
+}
+.details-info {
+  margin-bottom: 30px;
+}
+
+/* Main description block END */
+
+/* WORK Screenshots block START */
+.title11 {
+  width: 296px;
+}
+.work-screenshots {
+  margin-top: 50px;
+}
+.desktop-version-screenshots {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  justify-content: right;
+  margin: 0 auto;
+}
+.vertical-line {
+  border-left: 1px solid #6b6a6a;
+}
+.horizontal-line {
+  border-bottom: 1px solid #6b6a6a;
+}
+.desktop-version-screenshots :nth-child(1) {
+  margin-right: 46px;
+  margin-bottom: 46px;
+  margin-left: auto;
+}
+.desktop-version-screenshots :nth-child(3) {
+  margin-left: 46px;
+  margin-right: auto;
+  margin-bottom: 46px;
+}
+.desktop-version-screenshots :nth-child(7) {
+  margin-left: auto;
+  margin-right: 46px;
+  margin-top: 46px;
+}
+.desktop-version-screenshots :nth-child(9) {
+  margin-right: 46px;
+  margin-bottom: 46px;
+  margin-left: auto;
+}
+
+@media (max-width: 1180px) {
+  .work-main-info,
+  .work-screenshots {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .work-intro-text {
+    padding-top: 200px;
+  }
+  .desktop-version-screenshots :nth-child(1) {
+    margin: 0;
+    padding-right: 0 20px 20px 0;
+    width: 100%;
+  }
+  .desktop-version-screenshots :nth-child(3) {
+    margin: 0;
+    width: 100%;
+  }
+  .desktop-version-screenshots :nth-child(7) {
+    margin: 0;
+    width: 100%;
+  }
+  .desktop-version-screenshots :nth-child(9) {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .work-intro-text {
+    padding-top: 120px;
+  }
+  .work-main-info {
+    margin-top: 10vh;
+  }
+}
+@media (max-width: 425px) {
+.work-main-info{
+  flex-direction: column;
+  align-items: unset;
+}
+.work-overview h2{
+  text-align: center;
+}
+.work-overview p{
+  padding-left: 27px;
+  border-left: 1px solid #6b6a6a;
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+}
 
 /*---------- Page 4 - BeDentist-work START -------*/
