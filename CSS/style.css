@@ -17,7 +17,11 @@ header {
   max-width: 1180px;
   margin: 0 auto;
 }
-/*--------- Navigation menu block START---------- */
+
+/* --------- Main page START -------- */
+
+/* Navigation menu block START */
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -88,13 +92,9 @@ header {
   }
 }
 
-/* navbar-mobile block START*/
+/* Navigation menu block END */
 
-/* navbar-mobile block END*/
-
-/*--------- Navigation menu block END---------- */
-
-/* Slider (work not correctly */
+/* Slider (work not correctly) */
 /* .container{
     position: absolute;
     width: 100%;
@@ -144,7 +144,8 @@ header {
   margin-bottom: 35px;
 }
 
-/*--------- Intro block START---------- */
+/* Intro block START */
+
 .intro {
   margin-top: 50px;
 }
@@ -197,16 +198,17 @@ header {
   border: 1px solid #fff;
   color: #fff;
 }
-.button-page button:first-child {
-  margin-right: 40px;
+#button-r-margin {
+  margin-right: 20px;
 }
 .button-page button img {
   margin-right: 15px;
 }
 
-/*--------- Intro block END---------- */
+/* Intro block END */
 
-/*--------- Skills block START---------- */
+/* Skills block START */
+
 .skills {
   margin-top: 90px;
 }
@@ -249,9 +251,10 @@ header {
   text-align: center;
 }
 
-/*--------- Skills block END---------- */
+/* Skills block END */
 
-/*--------- Latest Works block START---------- */
+/* Latest Works block START */
+
 .latest-works {
   margin-top: 90px;
 }
@@ -301,9 +304,9 @@ header {
   width: 100%;
 }
 
-/*--------- Latest Works block END---------- */
+/* Latest Works block END */
 
-/*--------- Latest blog articles block START---------- */
+/* Latest blog articles block START */
 
 .latest-blog-articles {
   margin-top: 90px;
@@ -394,9 +397,9 @@ header {
   border-left: 1px solid #4d6172;
 }
 
-/*--------- Latest blog articles block END---------- */
+/* Latest blog articles block END */
 
-/*--------- Ways to contact me block START---------- */
+/* Ways to contact me block START */
 
 .contact-me {
   margin-top: 90px;
@@ -473,6 +476,8 @@ header {
   text-transform: uppercase;
 }
 
+/* Ways to contact me block END */
+
 /* Footer block START */
 
 .footer {
@@ -508,9 +513,10 @@ header {
 .footer-nav {
   height: 20px;
 }
+
 /* Footer block END */
 
-/*--------- Ways to contact me block END---------- */
+/* Adaptive for Main page */
 
 @media (max-width: 1180px) {
   .logo,
@@ -522,14 +528,12 @@ header {
     margin-left: 30px;
     margin-right: 30px;
   }
-  /* .main-nav {
+  .main-nav {
     margin-right: 30px;
-  } */
-}
-@media (max-width: 1000px) {
-  .button-page {
-    text-align: center;
   }
+}
+
+@media (max-width: 1000px) {
   .skills-cards {
     display: flex;
     justify-content: center;
@@ -559,7 +563,6 @@ header {
   .main-nav .hamburger {
     position: relative;
     cursor: pointer;
-    margin-right: 30px;
     margin-top: 15px;
     z-index: 10;
   }
@@ -667,7 +670,7 @@ header {
   .title4 {
     width: 300px;
   }
-  .button-page button:first-child {
+  #button-r-margin {
     margin-right: 0px;
     margin-bottom: 20px;
   }
@@ -707,6 +710,8 @@ header {
     margin-right: 10px;
   }
 }
+
+/* ------------- Main page END ------------ */
 
 /* -------------Page About Me START ----------*/
 
@@ -1109,7 +1114,6 @@ header {
   width: 100%;
   padding: 7px 7px;
 }
-/* -------------Page About Me END ----------*/
 
 /* Adaptive for page About me */
 
@@ -1138,6 +1142,7 @@ header {
     margin-bottom: 20px;
   }
 }
+
 @media (max-width: 815px) {
   .about-me-main-text {
     margin-top: 142px;
@@ -1216,6 +1221,7 @@ header {
     margin-top: 50px;
   }
 }
+
 @media (max-width: 410px) {
   .glance-cover {
     margin-top: 90px;
@@ -1229,8 +1235,9 @@ header {
     padding: 7px 7px;
   }
 }
+/* -------------Page About Me END ----------*/
 
-/*---------- Page 3 - Portfolio START -------*/
+/*----------- Portfolio page START -------*/
 
 .portfolio {
   margin-top: 50px;
@@ -1240,8 +1247,11 @@ header {
   max-width: 692px;
   text-align: center;
 }
-.works {
+.swiper-container {
   margin-top: 90px;
+}
+.swiper-slide {
+  max-width: 800px;
 }
 .work {
   display: flex;
@@ -1272,25 +1282,48 @@ header {
   width: 100%;
   min-width: 600px;
 }
-.swiper-container {
-  margin-top: 90px;
+
+/* Adaptive for page Portfolio */
+
+@media (max-width: 1180px) {
+  .portfolio .title-lines,
+  .portfolio p{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
-.swiper-slide {
-  max-width: 800px;
-  max-height: 411px;
-}
+
 @media (max-width: 750px) {
+  .swiper-container {
+    margin-top: 40px;
+  }
   .work {
     display: grid;
   }
   .work-info {
     margin: 0 auto;
+    text-align: center;
+  }
+  .work-info h1{
+    margin-bottom: 20px;
+  }
+  .work-info h2 {
+    margin-bottom: 40px;
+  }
+  .work-info .button-page{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+  }
+  .work-img img {
+    min-width: unset;
   }
 }
 
-/*---------- Page 3 - Portfolio END -------*/
+/*---------- Portfolio page END ----------*/
 
-/*---------- Page 4 - BeDentist-work START -------*/
+/*---------- Project page START ----------*/
 
 #work-header {
   height: 100vh;
@@ -1308,7 +1341,7 @@ header {
 
 .work-describer {
   position: relative;
-  margin-top: -30vh;
+  margin-top: -44vh;
 }
 .work-main-logo {
   text-align: center;
@@ -1379,16 +1412,39 @@ header {
 /* Main description block END */
 
 /* WORK Screenshots block START */
+
 .title11 {
   width: 296px;
+}
+.title-lines3 {
+  margin-bottom: 20px;
 }
 .work-screenshots {
   margin-top: 50px;
 }
+.sections-paragraph {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 18px;
+  color: #6b6a6a;
+}
+.view-all-paragraph {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #6b6a6a;
+  margin-bottom: 20px;
+}
+#leftSide-button {
+  text-align: left;
+}
+
+/* desktop-images block*/
+
 .desktop-version-screenshots {
   display: grid;
-  grid-template-columns: 1fr 1px 1fr;
-  justify-content: right;
+  grid-template-columns: auto 1px auto;
+
   margin: 0 auto;
 }
 .vertical-line {
@@ -1397,28 +1453,35 @@ header {
 .horizontal-line {
   border-bottom: 1px solid #6b6a6a;
 }
-.desktop-version-screenshots :nth-child(1) {
-  margin-right: 46px;
-  margin-bottom: 46px;
-  margin-left: auto;
-}
-.desktop-version-screenshots :nth-child(3) {
-  margin-left: 46px;
-  margin-right: auto;
-  margin-bottom: 46px;
-}
-.desktop-version-screenshots :nth-child(7) {
-  margin-left: auto;
-  margin-right: 46px;
-  margin-top: 46px;
-}
-.desktop-version-screenshots :nth-child(9) {
-  margin-right: 46px;
-  margin-bottom: 46px;
-  margin-left: auto;
+.desktop-version-screenshots img {
+  padding: 30px;
+  width: 100%;
 }
 
+/* mobile-images block*/
+.title12 {
+  width: 278px;
+}
+.mobile-version-section {
+  margin-top: 90px;
+}
+.mobile-version-screenshots {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto 1px auto 1px auto;
+  text-align: center;
+}
+.mobile-version-screenshots img {
+  width: 100%;
+  padding: 50px;
+}
+
+/* Adaptive for Project-page */
+
 @media (max-width: 1180px) {
+  .work-describer {
+    margin-top: -30vh;
+  }
   .work-main-info,
   .work-screenshots {
     margin-left: 30px;
@@ -1427,24 +1490,11 @@ header {
   .work-intro-text {
     padding-top: 200px;
   }
-  .desktop-version-screenshots :nth-child(1) {
-    margin: 0;
-    padding-right: 0 20px 20px 0;
-    width: 100%;
-  }
-  .desktop-version-screenshots :nth-child(3) {
-    margin: 0;
-    width: 100%;
-  }
-  .desktop-version-screenshots :nth-child(7) {
-    margin: 0;
-    width: 100%;
-  }
-  .desktop-version-screenshots :nth-child(9) {
-    margin: 0;
-    width: 100%;
+  .mobile-version-screenshots img {
+    padding: 20px;
   }
 }
+
 @media (max-width: 700px) {
   .work-intro-text {
     padding-top: 120px;
@@ -1452,21 +1502,105 @@ header {
   .work-main-info {
     margin-top: 10vh;
   }
-}
-@media (max-width: 425px) {
-.work-main-info{
-  flex-direction: column;
-  align-items: unset;
-}
-.work-overview h2{
-  text-align: center;
-}
-.work-overview p{
-  padding-left: 27px;
-  border-left: 1px solid #6b6a6a;
-  padding-bottom: 30px;
-  font-size: 18px;
-}
+  .desktop-version-screenshots {
+    grid-template-columns: 1fr 1px;
+  }
+  .desktop-version-screenshots img {
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #6b6a6a;
+  }
+  .mobile-version-screenshots {
+    grid-template-columns: auto auto;
+  }
+  .mobile-version-screenshots img {
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #6b6a6a;
+  }
+  .vertical-line {
+    border-left: unset;
+  }
+  .horizontal-line {
+    border-bottom: unset;
+  }
 }
 
-/*---------- Page 4 - BeDentist-work START -------*/
+@media (max-width: 585px) {
+  .title11 {
+    width: 246px;
+  }
+  .title12 {
+    width: 228px;
+  }
+}
+
+@media (max-width: 425px) {
+  .work-main-info {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .work-overview h2 {
+    text-align: center;
+  }
+  .work-overview p {
+    padding-left: 27px;
+    border-left: 1px solid #6b6a6a;
+    padding-bottom: 30px;
+    font-size: 18px;
+  }
+}
+
+/*---------- Project page END -------*/
+
+/* --------- Blog page START ----------  */
+
+.blog-overlay {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.blog-article {
+  margin: 40px 0 90px 0;
+}
+.blog-article h1 {
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.blog-article hr {
+  background-color: #bcb9b9;
+  color: #bcb9b9;
+}
+.blog-article p {
+  font-weight: normal;
+  font-size: 18px;
+  color: #6b6a6a;
+  margin-bottom: 40px;
+}
+.blog-article img {
+  width: 100%;
+}
+.blog-article article {
+  margin: 40px 0 40px 0;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #6b6a6a;
+}
+
+/* Adaptive for Blog page */
+
+@media (max-width: 820px) {
+  .blog-article {
+    margin: 40px 30px 90px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-article {
+    margin: 40px 30px 40px 30px;
+  }
+  .blog-article h1 {
+    font-size: 25px;
+  }
+}
+/* --------- Blog page END ----------  */
