@@ -20,66 +20,80 @@
     <title>Aimurzayev Amir | Front End Developer & UI/UX Designer</title>
   </head>
   <body>
-    
-      <!-- Navigation block START -->
-    <header >
+    <!-- Navigation block START -->
+
+    <header id="about-me-page">
       <div class="nav-overlay">
         <nav class="wrapper main-nav">
           <div class="logo">
-             <img class="logo-desktop" src="img/Logo.svg" alt="">
-            <img class="logo-mobile" src="img/Logo-mobile.svg" alt="">
+            <a href="index.html"
+              ><img class="logo-desktop" src="img/Logo.svg" alt=""
+            /></a>
+            <a href="index.html"
+              ><img class="logo-mobile" src="img/Logo-mobile.svg" alt=""
+            /></a>
           </div>
           <div class="hamburger">
-             <div class="line"></div>
-             <div class="line"></div>
-             <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
           </div>
           <ul class="nav-links">
-             <hr>
-             <li class="nav-item"><a href="#" class="nav-item-link">About me</a></li>
-             <hr>
-             <li class="nav-item"><a href="#" class="nav-item-link">Portfolio</a></li>
-             <hr>
-             <li class="nav-item"><a href="#" class="nav-item-link">Blog</a></li>
-             <hr>
-             <li class="nav-item"><a href="#" class="nav-item-link">Contacts</a></li>
-             <hr>
-                 <ul class="nav-social">
-                   <li class="social-item" ><img src="img/footer-icons/linkedin-footer.svg" alt=""></li>
-                   <li class="social-item"><img src="img/footer-icons/behance-footer.svg" alt=""></li>
-                   <li class="social-item"><img src="img/footer-icons/vk-footer.svg" alt=""></li>
-                   <li class="social-item"><img src="img/footer-icons/instagram-footer.svg" alt=""></li>
-                </ul>
-             </ul>
-         </nav>
-       </div>
+            <hr />
+            <li class="nav-item">
+              <a href="about-me.html" class="nav-item-link">About me</a>
+            </li>
+            <hr />
+            <li class="nav-item">
+              <a href="Portfolio.html" class="nav-item-link">Portfolio</a>
+            </li>
+            <hr />
+            <li class="nav-item">
+              <a href="Blog.html" class="nav-item-link">Blog</a>
+            </li>
+            <hr />
+            <li class="nav-item">
+              <a href="Contacts.html" class="nav-item-link">Contacts</a>
+            </li>
+            <hr />
+            <ul class="nav-social">
+              <li class="social-item">
+                <img src="img/footer-icons/linkedin-footer.svg" alt="" />
+              </li>
+              <li class="social-item">
+                <img src="img/footer-icons/behance-footer.svg" alt="" />
+              </li>
+              <li class="social-item">
+                <img src="img/footer-icons/vk-footer.svg" alt="" />
+              </li>
+              <li class="social-item">
+                <img src="img/footer-icons/instagram-footer.svg" alt="" />
+              </li>
+            </ul>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="about-me-main">
+        <div class="about-me-main-text">
+          <h1>I'm aimurzayev amir, an front-end Developer & UI/UX Designer.</h1>
+          <div id="typed-strings">
+            <p>I code cool websites</p>
+            <p>Just call me maybe</p>
+            <p>I love Tesla</p>
+            <p>I like everything space related</p>
+          </div>
+          <span id="typed"></span>
+        </div>
+      </div>
     </header>
+
     <!-- Navigation block END -->
-
-    <!-- Photo block + Parallax -->
-    <div class="main-img-bg">
-      <div class="main-img wrapper">
-      <div class="container-main">
-      <img src="img/main.png" alt="" />
-    </div>
-    <div class="main-social">
-      <img src="img/main-social/email-icon.svg" alt="">
-      <img src="img/main-social/linkedin-icon.svg" alt="">
-      <img src="img/main-social/behance-icon.svg" alt="">
-      <img src="img/main-social/vk-icon.svg" alt="">
-      <img src="img/main-social/instagram-icon.svg" alt="">
-    </div>
-    </div>
-    </div>
-    
-    
-
-    <!-- Photo block + Parallax END -->
 
     <!-- Introduction block START-->
 
     <div class="intro wrapper">
-      <div class="title-lines title-lines1" >
+      <div class="title-lines title-lines1">
         <hr class="line" />
         <div class="title">
           <h2 class="title1">A brief Introduction</h2>
@@ -98,12 +112,14 @@
         </p>
       </div>
       <div class="button-page">
-        <a href=""><button id="button-r-margin">LEARN MORE ABOUT ME</button></a>
-        <a href=""></a>
-          <button>
-            <img src="img/download.svg" alt="" />Download resume
-          </button></a
+        <a href="about-me.html" target="_blank"
+          ><button id="button-r-margin">LEARN MORE ABOUT ME</button></a
         >
+        <form method="get" action="Aimurzayev Amir - front end-summary.docx">
+          <button type="submit">
+            <img src="img/download.svg" alt="" />Download resume
+          </button>
+        </form>
       </div>
     </div>
 
@@ -212,7 +228,9 @@
       </div>
     </div>
     <div class="button-page">
-      <a href=""><button>View more projects</button></a>
+      <a href="Portfolio.html" target="_blank"
+        ><button>View more projects</button></a
+      >
     </div>
 
     <!-- Latest works block END -->
@@ -318,7 +336,9 @@
         </div>
       </div>
       <div class="button-page">
-        <a href=""><button>View more articles</button></a>
+        <a href="Blog.html" target="_blank"
+          ><button>View more articles</button></a
+        >
       </div>
     </div>
 
@@ -366,18 +386,28 @@
 
     <div class="footer">
       <div class="logo-footer" data-aos="zoom-in-up">
-        <img src="img/Logo.svg" alt="" />
+        <a href="index.html"><img src="img/Logo.svg" alt=""/></a>
       </div>
-        <nav class="footer-nav" data-aos="zoom-in-up" data-aos-delay="100">
-          <ul class="nav-links">
-            <li class="nav-item"><a href="#" class="nav-item-link">About me</a></li>
-            <li class="nav-item"><a href="#" class="nav-item-link">Portfolio</a></li>
-            <li class="nav-item"><a href="#" class="nav-item-link">Blog</a></li>
-            <li class="nav-item"><a href="#" class="nav-item-link">Contacts</a></li>
-          </ul>
-        </nav>
-      
-      <p data-aos="zoom-in-up" data-aos-delay="200">© 2020 Amir Aimurzayev. All rights reserved.</p>
+      <nav class="footer-nav" data-aos="zoom-in-up" data-aos-delay="100">
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="about-me.html" class="nav-item-link">About me</a>
+          </li>
+          <li class="nav-item">
+            <a href="Portfolio.html" class="nav-item-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="Blog.html" class="nav-item-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="Contacts.html" class="nav-item-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <p data-aos="zoom-in-up" data-aos-delay="200">
+        © 2020 Amir Aimurzayev. All rights reserved.
+      </p>
       <div class="footer-social" data-aos="zoom-in-up" data-aos-delay="300">
         <img src="img/footer-icons/linkedin-footer.svg" alt="" />
         <img src="img/footer-icons/behance-footer.svg" alt="" />
@@ -395,7 +425,8 @@
     <script src="libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="libs/owlCarousel/owl.carousel.min.js"></script>
     <script src="js/hamburger.js"></script>
-    <script src="js/main-slider.js"></script>
+    <script src="libs/typed.js"></script>
+    <script src="js/typing.js"></script>
     <script src="js/owlCarusel.js"></script>
   </body>
 </html>
