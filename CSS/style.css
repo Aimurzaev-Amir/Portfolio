@@ -63,7 +63,7 @@ header {
   margin-right: 0px;
 }
 .nav-item-link {
-  padding: 100% 10px 100% 10px;
+  padding: 35% 10px 35% 10px;
   text-decoration: none;
   font-weight: normal;
   font-size: 18px;
@@ -515,6 +515,39 @@ header {
   margin-top: 23px;
   text-transform: uppercase;
 }
+.social-list{
+  margin-top: 20px;
+  display: flex;
+}
+.social-ellipse {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+.behance-ellipse{
+  background: #1769FF;
+}
+.instagram-ellipse{
+  background: linear-gradient(180deg, #FFDD55 0%, #FF543E 51.56%, #C837AB 100%);
+}
+.linkedin-ellipse{
+  background: #006599;
+}
+.vk-ellipse{
+  background: #5181B8;
+}
+.social-ellipse img{
+  width: 30px;
+  height: 30px;
+}
+.linkedin-ellipse img{
+  width: 28px;
+  height: 28px;
+}
 
 /* Ways to contact me block END */
 
@@ -544,11 +577,12 @@ header {
   display: flex;
   align-items: flex-start;
 }
-.footer-social img {
+.footer-social a {
   margin-right: 30px;
 }
-.footer-social img:last-child {
+.footer-social a:last-child {
   margin-right: 0px;
+  padding-top: 3px;
 }
 .footer-nav {
   height: 20px;
@@ -621,6 +655,9 @@ header {
 }
 
 @media (max-width: 750px) {
+  .nav-overlay {
+    animation: unset;
+  }
   .main-nav .line {
     width: 30px;
     height: 3px;
@@ -647,8 +684,8 @@ header {
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(100px at 90% -15%);
-    -webkit-clip-path: circle(100px at 90% -15%);
+    clip-path: circle(90px at 90% -15%);
+    -webkit-clip-path: circle(90px at 90% -15%);
     transition: all 1s ease-out;
     pointer-events: none;
   }
@@ -788,6 +825,8 @@ header {
 
 .main-img-bg {
   background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 90px;
 }
 .main-img {
   position: relative;
@@ -797,6 +836,7 @@ header {
   display: flex;
   justify-content: center;
   overflow: hidden;
+  max-height: 600px;
 }
 .container-main .side-text {
   position: absolute;
@@ -822,13 +862,12 @@ header {
 .left-side {
   left: 0;
 }
-
 .design-side img {
   animation: design-animation 0.5s ease-out forwards;
   z-index: 1;
 }
 .front-end-side img {
-  animation: front-animation 0.5s ease-out forwards;
+  animation: front-end-animation 0.5s ease-out forwards;
   z-index: 1;
 }
 @keyframes side-text-anim {
@@ -847,7 +886,7 @@ header {
     transform: translatex(0);
   }
 }
-@keyframes front-animation {
+@keyframes front-end-animation {
   from {
     transform: translatex(100%);
   }
@@ -855,6 +894,7 @@ header {
     transform: translatex(0);
   }
 }
+
 /* About me intro block START */
 
 .about-intro {
@@ -1219,6 +1259,15 @@ header {
 }
 
 @media (max-width: 815px) {
+  .container-main .side-text {
+    max-width: 200px;
+  }
+  .side-text h1 {
+    font-size: 30px;
+  }
+  .side-text p {
+    font-size: 16px;
+  }
   .ticks p {
     font-size: 16px;
   }
@@ -1238,6 +1287,18 @@ header {
   .facts-info ul li {
     font-size: 16px;
   }
+}
+
+@media (max-width: 700px) {
+  .container-main .side-text {
+    max-width: 150px;
+  }
+.left-side{
+  margin-top: 100px;
+}
+.right-side{
+  margin-top: 100px;
+}
 }
 
 @media (max-width: 600px) {
@@ -1497,7 +1558,7 @@ header {
   margin-bottom: 20px;
 }
 #leftSide-button {
-  text-align: left;
+  justify-content: left;
 }
 
 /* desktop-images block*/

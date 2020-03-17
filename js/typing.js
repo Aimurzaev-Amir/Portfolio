@@ -6,3 +6,4 @@ $('document').ready(function(){
         typeSpeed: 40
     })
 });
+
