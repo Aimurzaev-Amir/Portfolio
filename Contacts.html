@@ -80,44 +80,66 @@
       </div>
 
       <div class="contact-window">
-        <div class="contact-form">
-          <input type="name" placeholder="Your beautiful name" />
-          <input type="adress" placeholder="Your email adress" />
+        <form class="contact-form" id="mailForm">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your beautiful name"
+          />
+          <input
+            type="phone"
+            id="phone"
+            name="phone"
+            placeholder="Your number, please"
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email adress"
+          />
           <textarea
             type="message"
+            id="message"
             rows="5"
             placeholder="Leave your message"
           ></textarea>
-        </div>
+        </form>
+
+        <!-- Input message block -->
+
         <div class="contact-info">
-          <p>E-mail<br />aimurzaev@mail.ru</p>
-          <p>Phone<br />+7 777 516 77 75 (Whats App, Telegram)</p>
+          <p>E-mail<br /><a href="mailto:aimurzaev@mail.ru">aimurzaev@mail.ru</a></p>
+          <p>Phone <br><a href="tel:+77775167775">+7(777)-516-77-75</a></p>
           <p>Adress<br />Almaty, Kazakhstan</p>
           <div class="contact-social">
-            <p>for more about me, i'm also on social:</p>
+            <p>for more about me, i'm <br> also on social:</p>
             <div class="social-list">
-              <a href="https://www.behance.net/Aimurzayev"
+              <a href="https://www.behance.net/Aimurzayev" target="_blank"
                 ><div class="social-ellipse behance-ellipse">
                   <img
                     src="img/footer-icons/behance-footer.svg"
                     alt="behance Aimurzayev Amir"
                   /></div
               ></a>
-              <a href="https://www.instagram.com/amiraimurzayev/"
+              <a
+                href="https://www.instagram.com/amiraimurzayev/"
+                target="_blank"
                 ><div class="social-ellipse instagram-ellipse">
                   <img
                     src="img/footer-icons/instagram-footer.svg"
                     alt="instagram Aimurzayev Amir"
                   /></div
               ></a>
-              <a href=""
+              <a href="" target="_blank"
                 ><div class="social-ellipse linkedin-ellipse">
                   <img
                     src="img/footer-icons/linkedin-footer.svg"
                     alt="linkedin Aimurzayev Amir"
                   /></div
               ></a>
-              <a href="https://vk.com/id140204225"
+              <a href="https://vk.com/id140204225" target="_blank"
                 ><div class="social-ellipse vk-ellipse">
                   <img
                     src="img/footer-icons/vk-footer.svg"
@@ -129,7 +151,7 @@
         </div>
       </div>
       <div class="button-page">
-        <a href=""><button>Send message</button></a>
+        <button type="button" id="sendMail">Send message</button>
       </div>
     </div>
 
@@ -193,5 +215,6 @@
     </script>
     <script src="libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/formMail.js"></script>
   </body>
 </html>

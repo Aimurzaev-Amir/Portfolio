@@ -501,12 +501,16 @@ header {
   padding-top: 14px;
 }
 .contact-info {
+  margin-top: 5px;
   margin-left: 52px;
 }
 .contact-info p {
   font-weight: normal;
   font-size: 18px;
-  margin-top: 21px;
+  margin-top: 30px;
+}
+.contact-info a{
+  color: #000;
 }
 .contact-info p:first-child {
   margin-top: 0;
@@ -684,15 +688,15 @@ header {
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(90px at 90% -15%);
-    -webkit-clip-path: circle(90px at 90% -15%);
+    clip-path: circle(80px at 90% -15%);
+    -webkit-clip-path: circle(80px at 90% -15%);
     transition: all 1s ease-out;
     pointer-events: none;
   }
 
   .main-nav .nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(1100px at 90% -10%);
+    -webkit-clip-path: circle(1100px at 90% -10%);
     pointer-events: all;
   }
   /* .main-nav .nav-links .nav-item {
