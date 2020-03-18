@@ -307,11 +307,11 @@ header {
   margin-bottom: 40px;
 }
 .work-card {
-  max-width: 374px;
+  position: relative;
   margin-right: 20px;
-}
-.work-cards :last-child {
-  margin-right: 0px;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
 }
 .card-header {
   display: flex;
@@ -343,6 +343,40 @@ header {
 .work-card .card-body img {
   width: 100%;
 }
+.work-card-info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 40%;
+  color: #fff;
+  display: none;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card-info-bg{
+  transition: 1s;
+}
+.work-card:hover .work-card-info {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 5px 5px 0px 0px;
+transition: 1s;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 
 /* Latest Works block END */
 
@@ -509,7 +543,7 @@ header {
   font-size: 18px;
   margin-top: 30px;
 }
-.contact-info a{
+.contact-info a {
   color: #000;
 }
 .contact-info p:first-child {
@@ -519,7 +553,7 @@ header {
   margin-top: 23px;
   text-transform: uppercase;
 }
-.social-list{
+.social-list {
   margin-top: 20px;
   display: flex;
 }
@@ -532,23 +566,23 @@ header {
   align-items: center;
   margin-right: 15px;
 }
-.behance-ellipse{
-  background: #1769FF;
+.behance-ellipse {
+  background: #1769ff;
 }
-.instagram-ellipse{
-  background: linear-gradient(180deg, #FFDD55 0%, #FF543E 51.56%, #C837AB 100%);
+.instagram-ellipse {
+  background: linear-gradient(180deg, #ffdd55 0%, #ff543e 51.56%, #c837ab 100%);
 }
-.linkedin-ellipse{
+.linkedin-ellipse {
   background: #006599;
 }
-.vk-ellipse{
-  background: #5181B8;
+.vk-ellipse {
+  background: #5181b8;
 }
-.social-ellipse img{
+.social-ellipse img {
   width: 30px;
   height: 30px;
 }
-.linkedin-ellipse img{
+.linkedin-ellipse img {
   width: 28px;
   height: 28px;
 }
@@ -1297,12 +1331,12 @@ header {
   .container-main .side-text {
     max-width: 150px;
   }
-.left-side{
-  margin-top: 100px;
-}
-.right-side{
-  margin-top: 100px;
-}
+  .left-side {
+    margin-top: 100px;
+  }
+  .right-side {
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 600px) {
