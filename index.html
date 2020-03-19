@@ -18,7 +18,7 @@
       href="libs/owlCarousel/assets/owl.theme.default.css"
     />
     <title>Aimurzayev Amir | Front End Developer & UI/UX Designer</title>
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
   </head>
   <body>
     <!-- Navigation block START -->
@@ -103,8 +103,10 @@
           </div>
           <span id="typed"></span>
         </div>
-        <div class="mouse-scroll">
-          <div class="scroll-button"></div>
+        <div class="scroll-indicator" id="scroll-indicator">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </header>
@@ -113,7 +115,7 @@
 
     <!-- Introduction block START-->
 
-    <div class="intro wrapper">
+    <div class="intro wrapper" id="intro">
       <div class="title-lines title-lines1">
         <hr class="line" />
         <div class="title">
@@ -334,6 +336,9 @@
               </div>
             </div>
           </div>
+          <div class="article-hover">
+            <a href=""><h3>Read more...</h3></a>
+          </div>
         </div>
 
         <div class="article-card">
@@ -359,10 +364,10 @@
               <div class="article-comments">
                 <p>3 comments</p>
               </div>
-              <div class="article-share">
-                <p>8 share</p>
-              </div>
             </div>
+          </div>
+          <div class="article-hover">
+            <a href=""><h3>Read more...</h3></a>
           </div>
         </div>
 
@@ -393,6 +398,9 @@
                 <p>8 share</p>
               </div>
             </div>
+          </div>
+          <div class="article-hover">
+            <a href=""><h3>Read more...</h3></a>
           </div>
         </div>
       </div>
@@ -550,16 +558,16 @@
 
     <!-- Footer block END -->
 
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="libs/owlCarousel/owl.carousel.min.js"></script>
-    <script src="js/hamburger.js"></script>
     <script src="libs/typed.js"></script>
-    <script src="js/typing.js"></script>
+
     <script src="js/owlCarusel.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/formMail.js"></script>
   </body>
 </html>

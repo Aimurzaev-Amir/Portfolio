@@ -18,11 +18,12 @@ showPartnerSlider();
 function initialGuestSlider() {
   $guestSlider.addClass("owl-carousel").owlCarousel({
     loop:true,
+    dots: true,
     center:true,
     autoWidth: true,
     margin: 20,
     autoplay: true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 3000,
     smartSpeed: 1000
   });
 }

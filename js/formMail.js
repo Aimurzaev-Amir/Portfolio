@@ -1,3 +1,4 @@
+// Contact me block function
 $("#sendMail").on("click", function() {
   var name = $("#name")
     .val()
