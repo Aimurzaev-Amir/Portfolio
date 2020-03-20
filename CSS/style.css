@@ -134,7 +134,7 @@ header {
 #about-me-page {
   height: 100vh;
   background-color: #fff;
-  background-image: url("/img/main.png");
+  background-image: url(../img/main.png);
   background-attachment: fixed;
   background-position: right bottom;
   background-repeat: no-repeat;
