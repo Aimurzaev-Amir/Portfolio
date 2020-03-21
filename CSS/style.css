@@ -1584,11 +1584,17 @@ header {
 }
 .work-intro {
   position: relative;
-  background-image: url(../img/work-bedentist/main-img.png);
+  
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+}
+.work-move-bg{
+  background-image: url(../img/work-move/main-move-bg.jpg);
+}
+.work-bedentist-bg{
+  background-image: url(../img/work-bedentist/main-img.png);
 }
 
 /* Main description block STARt */
