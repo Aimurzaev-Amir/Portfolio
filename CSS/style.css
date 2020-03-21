@@ -4,12 +4,14 @@
   padding: 0;
   margin: 0;
 }
-body {
+.bg-blue {
   background-color: #f5f5f5;
+}
+.bg-white {
+  background-color: #fff;
 }
 header {
   overflow: hidden;
-  background: #f5f5f5;
 }
 .nav-overlay {
   background: #000;
@@ -261,7 +263,7 @@ header {
   padding: 16px 35px;
   border: 1.5px solid #000;
   cursor: pointer;
-  background-color: #f5f5f5;
+  background-color: transparent;
 }
 .button-page button:hover {
   background-color: #000;
@@ -1551,22 +1553,26 @@ header {
   .swiper-container {
     margin-top: 40px;
   }
+  .swiper-wrapper {
+    height: 400px;
+  }
   .work {
     display: grid;
   }
   .work-info {
     margin: 0 auto;
     text-align: center;
+    max-height: 100px;
   }
   .work-info h1 {
     margin-bottom: 20px;
   }
   .work-info h2 {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
   .work-info .button-page {
     position: absolute;
-    bottom: -40px;
+    bottom: 0px;
     left: 0;
     right: 0;
   }
@@ -1585,18 +1591,21 @@ header {
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.work-move-bg{
+.work-move-bg {
   background-image: url(../img/work-move/main-move-bg.jpg);
 }
-.work-bedentist-bg{
+.work-bedentist-bg {
   background-image: url(../img/work-bedentist/main-img.png);
 }
-.work-kaztransgas-bg{
+.work-kaztransgas-bg {
   background-image: url(../img/work-kaztransgas/kaztransgas-main-bg.jpg);
+}
+.work-portfolio-bg {
+  background-image: url(../img/work-portfolio/main-portfolio-bg.png);
+  /* background-color: #fff; */
 }
 
 /* Main description block STARt */
@@ -1697,7 +1706,7 @@ header {
   color: #6b6a6a;
   margin-bottom: 20px;
 }
-#leftSide-button {
+.leftSide-button {
   justify-content: left;
 }
 
@@ -1762,7 +1771,7 @@ header {
     padding-top: 120px;
   }
   .work-main-info {
-    margin-top: 10vh;
+    margin-top: 15vh;
   }
   .desktop-version-screenshots {
     grid-template-columns: 1fr 1px;
