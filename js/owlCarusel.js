@@ -34,9 +34,9 @@ function destroyGuestSlider() {
 
 $(".works").owlCarousel({
   loop: true,
+  dots: true,
   autoplay: true,
   items: 1,
-  dots: true,
   autoplayHoverPause: true,
   animateOut: 'slideOutUp',
   animateIn: 'slideInUp'

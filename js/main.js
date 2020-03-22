@@ -34,7 +34,6 @@ $(function() {
   
   // Swiper slider on the Portfolio page
   var swiper = new Swiper('.swiper-container', {
-    paginationClickable: true,
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
@@ -49,6 +48,7 @@ $(function() {
     },
     pagination: {
       el: '.swiper-pagination',
+      clickable: true
     },
     loop: true,
   });

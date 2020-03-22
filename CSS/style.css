@@ -264,8 +264,10 @@ header {
   border: 1.5px solid #000;
   cursor: pointer;
   background-color: transparent;
+  transition: 0.4s;
 }
 .button-page button:hover {
+  transition: 0.4s;
   background-color: #000;
   border: 1.5px solid #fff;
   color: #fff;

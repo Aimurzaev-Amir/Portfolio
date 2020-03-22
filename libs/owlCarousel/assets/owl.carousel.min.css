@@ -51,7 +51,9 @@
   display: block;
   width: 100%;
 }
-.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-dots.disabled{
+  display: block;
+}
 .owl-carousel .owl-nav.disabled {
   display: none;
 }
