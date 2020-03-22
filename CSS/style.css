@@ -13,6 +13,11 @@
 header {
   overflow: hidden;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .nav-overlay {
   background: #000;
   animation: nav-animation 1s ease-out forwards;
@@ -280,9 +285,10 @@ header {
 .button-page button:hover {
   transition: 0.4s;
   background-color: #000;
-  border: 1.5px solid #fff;
+  border: 1.5px solid #BCB9B9;
   color: #fff;
 }
+
 #button-r-margin {
   margin-right: 20px;
 }
@@ -1582,7 +1588,7 @@ header {
 
 /*---------- Project page START ----------*/
 
-#work-header {
+.work-header {
   height: 100vh;
   position: relative;
   background-position: top;
@@ -1601,8 +1607,8 @@ header {
   background-image: url(../img/work-kaztransgas/kaztransgas-main-bg.jpg);
 }
 .work-portfolio-bg {
-  background-image: url(../img/work-portfolio/main-portfolio-bg.png);
-  /* background-color: #fff; */
+  background: linear-gradient(180deg, #000000 29.17%, rgba(0, 0, 0, 0) 100%);
+  box-shadow: unset;
 }
 
 /* Main description block STARt */
