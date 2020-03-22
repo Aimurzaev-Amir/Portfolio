@@ -256,6 +256,17 @@ header {
   display: flex;
   justify-content: center;
 }
+#download-btn{
+  display: flex;
+  align-items: center;
+}
+#download-btn svg{
+  margin-right: 20px;
+}
+#download-btn:hover svg path{
+  transition: 0.4s;
+  fill: white;
+}
 .button-page button {
   font-weight: 500;
   font-size: 16px;
@@ -1165,28 +1176,28 @@ header {
 
 /* Education block START */
 
-.cards-edu-overlay {
-  position: relative;
-  margin-top: 110px;
-}
 .title7 {
   width: 216px;
 }
-.cards-edu-overlay .container-cards {
+.edu-overlay {
+  position: relative;
+  margin-top: 110px;
+}
+.container-edu {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   transform: skewY(-6deg);
 }
-.cards-edu-overlay .container-cards .card-edu .card-edu-half {
+.container-edu .card-edu {
   position: relative;
   width: 300px;
   height: 400px;
-  background-color: #fff;
+  background: #fff;
   transition: 0.5s;
 }
-.cards-edu-overlay .container-cards .card-edu .card-edu-half:before {
+.container-edu .card-edu:before {
   content: "";
   position: absolute;
   top: -15px;
@@ -1198,7 +1209,7 @@ header {
   transform: skewX(45deg);
   transition: 0.5s;
 }
-.cards-edu-overlay .container-cards .card-edu .card-edu-half:after {
+.container-edu .card-edu:after {
   content: "";
   position: absolute;
   top: -15px;
@@ -1211,48 +1222,47 @@ header {
   transition: 0.5s;
   border-bottom: 200px solid #d9d9d9;
 }
-.cards-edu-overlay .container-cards .card-edu .card-edu-half:hover {
+.container-edu .card-edu:hover {
   transform: translateY(-40px);
 }
-.cards-edu-overlay .container-cards .card-edu .card-edu-half .imgBx {
+.container-edu .card-edu .imgBx-edu {
   position: relative;
   width: 300px;
   height: 200px;
-  background-color: #00c7ff;
+  background: #00c7ff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.cards-edu-overlay .container-cards .card-edu .card-edu-half .imgBx img {
+.container-edu .card-edu .imgBx-edu img {
   max-width: 100px;
 }
-.cards-edu-overlay .container-cards .card-edu .card-edu-half .imgBx h3 {
+.container-edu .card-edu .imgBx-edu h3 {
   position: relative;
   color: #fff;
-  margin-top: 20px;
+  margin-top: 10px;
 }
-.cards-edu-overlay .container-cards .card-edu .card-edu-half .content-edu {
+.container-edu .card-edu .content-edu {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   height: 200px;
   color: #777;
   background: #fff;
   text-align: center;
-  padding-top: 60px;
+  font-size: 16px;
 }
-.cards-edu-overlay .container-cards .card-edu .card-edu-half .content-edu p {
+.container-edu .card-edu .content-edu p {
   padding-bottom: 10px;
 }
 #design-studio span {
   font-size: 10px;
 }
-.cards-edu-overlay
-  .container-cards
-  .card-edu
-  .card-edu-half
-  .content-edu
-  :before {
+.container-edu .card-edu .content-edu:before {
   content: "";
   position: absolute;
   left: 0;
@@ -1266,39 +1276,18 @@ header {
   pointer-events: none;
   z-index: -1;
 }
-.cards-edu-overlay
-  .container-cards
-  .card-edu
-  .card-edu-half
-  .content-edu
-  :hover
-  :before {
-  transform: translateX(40px) skewX(45deg);
+.container-edu .card-edu:hover .content-edu:before {
+  transform: translateY(40px) skewX(45deg);
   filter: blur(5px);
   opacity: 0.5;
 }
-.cards-edu-overlay
-  .container-cards
-  .card-edu
-  .card-edu-half
-  .content-edu
-  :nth-child(1) {
+.container-edu .card-edu:nth-child(1) {
   z-index: 3;
 }
-.cards-edu-overlay
-  .container-cards
-  .card-edu
-  .card-edu-half
-  .content-edu
-  :nth-child(2) {
+.container-edu .card-edu:nth-child(2) {
   z-index: 2;
 }
-.cards-edu-overlay
-  .container-cards
-  .card-edu
-  .card-edu-half
-  .content-edu
-  :nth-child(3) {
+.container-edu .card-edu:nth-child(3) {
   z-index: 1;
 }
 
@@ -1369,11 +1358,14 @@ header {
 /* Adaptive for page About me */
 
 @media (max-width: 1180px) {
-  .container-cards .card-edu {
-    margin-bottom: 50px;
+  .container-edu .card-edu {
+    margin-right: 30px;
   }
-  .container-cards :last-child {
-    margin-bottom: 0px;
+  .container-edu .card-edu:last-child {
+    margin-right: 0px;
+  }
+  .container-edu .card-edu {
+    margin-bottom: 50px;
   }
   .random-facts {
     grid-column-gap: 35px;
@@ -1460,6 +1452,9 @@ header {
     grid-row-gap: 40px;
     justify-content: center;
     margin-bottom: 40px;
+  }
+  .container-edu .card-edu {
+    margin-right: 0px;
   }
   .random-facts {
     display: grid;
