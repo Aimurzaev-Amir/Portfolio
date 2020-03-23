@@ -1653,8 +1653,8 @@ header {
   justify-content: space-between;
 }
 .work-overview {
-  max-width: 790px;
-  padding-right: 50px;
+  max-width: 815px;
+  margin-right: 50px;
 }
 .work-overview .work-title h2 {
   margin-bottom: 30px;
@@ -1666,11 +1666,9 @@ header {
   font-weight: normal;
   font-size: 22px;
   color: #6b6a6a;
-  margin-right: 20px;
 }
 .work-overview .design-info {
   margin-top: 50px;
-  max-width: 790px;
   display: flex;
   justify-content: space-between;
 }
@@ -1709,6 +1707,76 @@ header {
   font-weight: 500;
   font-size: 14px;
 }
+.work-overview .design-info .work-styles .work-move-h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+}
+.work-overview .design-info .work-styles .work-move-h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+.work-overview .design-info .work-styles .work-move-h3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+}
+.work-overview .design-info .work-styles .work-move-h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+.work-overview .design-info .work-styles .work-kaztransgas-h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+}
+.work-overview .design-info .work-styles .work-kaztransgas-h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+.work-overview .design-info .work-styles .work-kaztransgas-h3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+}
+.work-overview .design-info .work-styles .work-bedentist-h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 43px;
+}
+.work-overview .design-info .work-styles .work-bedentist-h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+}
+.work-overview .design-info .work-styles .work-bedentist-h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+}
+.work-overview .design-info .work-styles .work-bedentist-h4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+}
+.work-overview .design-info .work-styles .work-bedentist-h5 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+.work-overview .design-info .work-styles .work-bedentist-h6 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+}
+.work-overview .design-info .work-styles .work-bedentist-h7 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
 .work-colors {
   text-align: center;
 }
@@ -1738,8 +1806,52 @@ header {
   background: #ffffff;
   border: 0.6px solid #000000;
 }
+.move-ellips1 {
+  background: #da4b52;
+}
+.move-ellips2 {
+  background: #000;
+}
+.move-ellips3 {
+  background: #8f8585;
+}
+.move-ellips4 {
+  background: #585858;
+}
+.kaztransgas-ellips1 {
+  background: #007ab9;
+}
+.kaztransgas-ellips2 {
+  background: #000;
+}
+.kaztransgas-ellips3 {
+  background: #ffffff;
+  border: 0.6px solid #000000;
+}
+.kaztransgas-ellips4 {
+  background: #f3f4f4;
+  border: 0.6px solid #000000;
+}
+.bedentist-ellips1 {
+  background: #2a93c9;
+}
+.bedentist-ellips2 {
+  background: #65b6df;
+}
+.bedentist-ellips3 {
+  background: #a4a8aa;
+}
+.bedentist-ellips4 {
+  background: #616262;
+}
+.bedentist-ellips5 {
+  background: #000;
+}
+.bedentist-ellips6 {
+  background: #eaeaea;
+}
 .work-details {
-  max-width: 280px;
+  max-width: 230px;
   padding-left: 27px;
   border-left: 1px solid #6b6a6a;
 }
@@ -1857,8 +1969,11 @@ header {
     padding: 20px;
   }
 }
-
 @media (max-width: 700px) {
+  .leftSide-button {
+    justify-content: unset;
+    align-items: unset;
+  }
   .work-intro-text {
     padding-top: 120px;
     padding-left: 30px;
@@ -1939,22 +2054,6 @@ header {
     width: 228px;
   }
 }
-
-/* @media (max-width: 425px) {
-  .work-main-info {
-    flex-direction: column;
-    align-items: unset;
-  }
-  .work-overview .work-title h2 {
-    text-align: center;
-  }
-  .work-overview .work-title p {
-    padding-left: 27px;
-    border-left: 1px solid #6b6a6a;
-    padding-bottom: 30px;
-    font-size: 18px;
-  }
-} */
 
 /*---------- Project page END -------*/
 
