@@ -1462,7 +1462,7 @@ header {
     justify-content: center;
     margin-bottom: 40px;
   }
-  .edu-overlay{
+  .edu-overlay {
     margin: 80px 30px 0 30px;
   }
   .container-edu .card-edu {
@@ -1685,7 +1685,7 @@ header {
   font-size: 18px;
   color: #6b6a6a;
 }
-.work-overview .design-info .work-styles .work-style{
+.work-overview .design-info .work-styles .work-style {
   margin-top: 16px;
   color: #6b6a6a;
 }
@@ -1709,7 +1709,7 @@ header {
   font-weight: 500;
   font-size: 14px;
 }
-.work-colors{
+.work-colors {
   text-align: center;
 }
 .color-ellipses {
@@ -1830,7 +1830,7 @@ header {
 }
 
 /* Adaptive for Project-page */
-@media(min-height: 1181px){
+@media (min-height: 1181px) {
   .work-describer {
     margin-top: -30vh;
   }
@@ -1847,10 +1847,10 @@ header {
   .work-intro-text {
     padding-top: 200px;
   }
-  .work-overview .design-info{
+  .work-overview .design-info {
     flex-wrap: wrap;
   }
-  .work-overview .design-info .work-typography{
+  .work-overview .design-info .work-typography {
     margin-bottom: 30px;
   }
   .mobile-version-screenshots img {
@@ -1861,6 +1861,8 @@ header {
 @media (max-width: 700px) {
   .work-intro-text {
     padding-top: 120px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .work-main-info {
     flex-direction: column;
@@ -1881,30 +1883,30 @@ header {
   .work-main-info {
     margin-top: 15vh;
   }
-  .work-overview .design-info{
+  .work-overview .design-info {
     margin-top: 0px;
     padding: 0 0 30px 30px;
     flex-direction: column;
     border-left: 1px solid #6b6a6a;
   }
-  .work-overview .design-info .work-typography{
+  .work-overview .design-info .work-typography {
     margin-bottom: 0px;
   }
-  .work-overview .design-info .work-styles{
+  .work-overview .design-info .work-styles {
     padding-top: 30px;
   }
-  .work-overview .design-info .work-styles .work-style{
+  .work-overview .design-info .work-styles .work-style {
     margin-top: 10px;
     color: #6b6a6a;
   }
-  .work-overview .design-info .work-colors{
+  .work-overview .design-info .work-colors {
     padding-top: 30px;
     text-align: left;
   }
   .color-ellipses {
     grid-template-columns: 43px 43px 43px 43px;
   }
-  .work-overview .design-info p{
+  .work-overview .design-info p {
     margin-top: 10px;
   }
   .desktop-version-screenshots {
@@ -1957,11 +1959,9 @@ header {
 /*---------- Project page END -------*/
 
 /* --------- Blog page START ----------  */
-
 .blog-paper {
   margin-top: 90px;
-  padding-top: 90px;
-  padding-bottom: 40px;
+  padding: 50px 0 40px 0;
   background-color: #fff;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 }
@@ -1982,11 +1982,13 @@ header {
   background-color: #bcb9b9;
   color: #bcb9b9;
 }
-.blog-article p {
+.blog-article .date-views {
+  display: flex;
+  justify-content: space-between;
   font-weight: normal;
   font-size: 18px;
-  color: #6b6a6a;
   margin-bottom: 40px;
+  color: #6b6a6a;
 }
 .blog-article img {
   width: 100%;
