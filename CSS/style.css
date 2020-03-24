@@ -2122,11 +2122,30 @@ header {
 }
 .blog-article h3 {
   font-weight: normal;
-  color: #000;
   font-size: 22px;
   margin-bottom: 20px;
 }
-
+.blog-article a{
+  text-decoration: none;
+  color: #000;
+}
+.blog-article h4 {
+  color: #77D6E8;
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.blog-article h4:hover{
+  color: #498F9C;
+}
+.blog-article .article-list {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #6b6a6a;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
 
 
 /* Adaptive for Blog page */
@@ -2149,3 +2168,93 @@ header {
     font-size: 25px;
   }
 }
+
+/* --------- Blog page END ----------  */
+
+/* --------- Article page START ----------  */
+.code-feedback-form{
+    overflow: scroll; 
+    width: 100%; 
+    height: 300px; 
+    padding: 5px; 
+    border: solid 1px black; 
+    margin-bottom: 20px;
+}
+
+/* Share buttons START*/
+
+.share-buttons a{
+  text-decoration: none;
+}
+.share-buttons{
+	max-width: 326px;
+  margin:0 auto;
+}
+.share-block{
+  display: inline-block;
+	background: #fff;
+	width: 50px;
+	height: 50px;
+	margin-bottom: 16px;
+	border: 1px solid #ccc;
+	text-align: center;
+	transition: 0.5s;
+}
+.share-block:hover{
+	animation: share-animation 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	border-color: #0c7fd7;
+}
+
+
+.share-block i{
+	font-size: 20px;
+	position: relative;
+	top: 15px;
+}
+.share-block span{
+	display: block;
+	position: relative;
+	top: -9px;
+	font-size: 10px;
+	line-height: 1;
+}
+.share-buttons .facebook{
+	color: #3b5998;
+}
+.share-buttons .vk{
+	color: #5E82A8;
+}
+.share-buttons  .linkedin{
+	color: #0976b4;
+}
+.share-buttons .pinterest{
+	color: #cc2127;
+}
+.share-buttons .google{
+	color: #d73925;
+}
+.share-buttons .twitter{
+	color: #55acee;
+}
+
+@keyframes share-animation {
+	10%, 90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	20%, 80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%, 50%, 70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%, 60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}
+
+/* Share buttons END*/
+
+/* --------- Article page END ----------  */

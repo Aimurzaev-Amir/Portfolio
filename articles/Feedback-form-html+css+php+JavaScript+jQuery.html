@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>
+      Feedback form html + css + php + JavaScript + jQuery
+    </title>
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
+    <script src="https://use.fontawesome.com/3c02c6a561.js"></script>
+  </head>
+  <body class="bg-blue">
+    <!-- Navigation block START -->
+
+    <header>
+      <div class="nav-overlay">
+        <nav class="wrapper main-nav">
+          <div class="logo">
+            <a href="../index.html"
+              ><img class="logo-desktop" src="../img/Logo.svg" alt=""
+            /></a>
+            <a href="../index.html"
+              ><img class="logo-mobile" src="../img/Logo-mobile.svg" alt=""
+            /></a>
+          </div>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <ul class="nav-links">
+            <hr />
+            <li class="nav-item">
+              <a href="../about-me.html" class="nav-item-link">About me</a>
+            </li>
+            <hr />
+            <li class="nav-item">
+              <a href="../Portfolio.html" class="nav-item-link">Portfolio</a>
+            </li>
+            <hr />
+            <li class="nav-item">
+              <a href="../Blog.html" class="nav-item-link">Blog</a>
+            </li>
+            <hr />
+            <li class="nav-item">
+              <a href="../Contacts.html" class="nav-item-link">Contacts</a>
+            </li>
+            <hr />
+            <ul class="nav-social">
+              <li class="social-item">
+                <img src="../img/footer-icons/linkedin-footer.svg" alt="" />
+              </li>
+              <li class="social-item">
+                <img src="../img/footer-icons/behance-footer.svg" alt="" />
+              </li>
+              <li class="social-item">
+                <img src="../img/footer-icons/vk-footer.svg" alt="" />
+              </li>
+              <li class="social-item">
+                <img src="../img/footer-icons/instagram-footer.svg" alt="" />
+              </li>
+            </ul>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Navigation block END -->
+
+    <div class="article-read-more blog-paper wrapper">
+      <div class="blog-overlay">
+        <div class="blog-article">
+          <h1>
+            Feedback form html + css + php + JavaScript + jQuery
+          </h1>
+          <hr />
+          <div class="date-views">
+            <p class="date">By Amir Aimurzayev on 28 Feb 2020</p>
+            <!-- <script src="../js/counter.js"></script> -->
+          </div>
+
+          <img
+            src="../img/articles/article4/article4-main.png"
+            alt="Simple feedback form tutorial html js jquery php"
+          />
+          <article>
+            Hello everyone, friends! In this article I want to share with you a
+            simple feedback form for a site running on PHP, JavaScript and AJAX.
+            This form has some additional functions, which are discussed in more
+            detail later. You don’t need any special skills to create this form,
+            just knowledge of the basics of html layout, CSS3 and elementary
+            logic will be enough.
+          </article>
+          <img
+            src="../img/articles/article4/article4-main222.png"
+            alt="Simple feedback form tutorial html js jquery php"
+          />
+          <p>
+            First of all, it is necessary to consider all the fields that will
+            be available to us in this form.
+          </p>
+          <h3>The structure of the fields of the feedback form:</h3>
+          <ul class="article-list">
+            <li>Sender name</li>
+            <li>Telephone</li>
+            <li>Mailing address</li>
+            <li>Customer message</li>
+          </ul>
+          <h3>Features of this form:</h3>
+          <ul class="article-list">
+            <li>Inability to send messages without filling in all fields.</li>
+            <li>Lock the "Send message" button while sending a message.</li>
+            <li>Displays a success / failure window for sending a message.</li>
+            <li>Clearing the field after sending the message.</li>
+          </ul>
+          <h3>What does the feedback form include?</h3>
+          <ul class="article-list">
+            <li>HTML markup (layout creation)</li>
+            <li>Styling form fields in CSS</li>
+            <li>JavaScript + AJAX</li>
+            <li>PHP handler</li>
+          </ul>
+          <h3>Feedback forms HTML markup:</h3>
+          <p>And so, let's look at the layout of the form:</p>
+          <div class="code-feedback-form"></div>
+          <p>
+            In this form, there are four fields to fill in, which have an id
+            that will be used later in JavaScript. There is also a column with
+            brief information about the site owner and links to social
+            networking pages. At the end of the form is the submit button.
+          </p>
+          <h3>CSS Form Design</h3>
+          <p>
+            All form fields are styled using CSS flexbox (Flexible Box Layout
+            Module) and are divided into groups by additional classes. Of
+            course, you can create your own styles. If you know CSS, then you
+            can set the appearance for all form elements without any problems,
+            then my help will not even be required.
+          </p>
+          <div class="code-feedback-form">
+            <p>
+              *{ <br />
+              margin: 0; <br />
+              padding: 0; <br />
+              box-sizing: border-box; <br />
+              font-family: "Work Sans", sans-serif; <br />
+              } <br />
+              body{ <br />
+              background-color: #F5F5F5; <br />
+              } <br />
+              .contact-me { <br />
+              margin-top: 90px; <br />
+              } <br />
+              .title-contact { <br />
+              display: flex; <br />
+              flex-direction: column; <br />
+              justify-content: center; <br />
+              } <br />
+              .contact-me .title-contact h2 { <br />
+              font-weight: normal; <br />
+              font-size: 22px; <br />
+              text-transform: uppercase; <br />
+              text-align: center; <br />
+              } <br />
+              .contact-me .title-contact hr { <br />
+              margin-top: 22px; <br />
+              width: 178px; <br />
+              margin-left: auto; <br />
+              margin-right: auto; <br />
+              } <br />
+              .contact-me .title-contact p { <br />
+              max-width: 568px; <br />
+              font-weight: normal; <br />
+              font-size: 18px; <br />
+              margin-top: 22px; <br />
+              text-align: center; <br />
+              margin-left: auto; <br />
+              margin-right: auto; <br />
+              } <br />
+              .contact-window { <br />
+              display: flex; <br />
+              justify-content: center; <br />
+              margin-top: 40px; <br />
+              margin-bottom: 40px; <br />
+              } <br />
+              .contact-me .contact-form { <br />
+              display: flex; <br />
+              flex-direction: column; <br />
+              width: 528px; <br />
+              } <br />
+              .contact-me .contact-form input { <br />
+              display: inline-block; <br />
+              max-width: 528px; <br />
+              height: 50px; <br />
+              padding-left: 51px; <br />
+              font-weight: normal; <br />
+              font-size: 18px; <br />
+              color: #000; <br />
+              margin-bottom: 20px; <br />
+              } <br />
+              .contact-me .contact-form textarea[type="message"] { <br />
+              max-width: 528px; <br />
+              margin-bottom: 0px; <br />
+              padding-left: 51px; <br />
+              font-weight: normal; <br />
+              font-size: 18px; <br />
+              color: #000; <br />
+              padding-top: 14px; <br />
+              } <br />
+              .contact-info { <br />
+              margin-top: 5px; <br />
+              margin-left: 52px; <br />
+              } <br />
+              .contact-info p { <br />
+              font-weight: normal; <br />
+              font-size: 18px; <br />
+              margin-top: 30px; <br />
+              } <br />
+              .contact-info a { color: #000; <br />
+              } <br />
+              .contact-info p:first-child { <br />
+              margin-top: 0; <br />
+              } <br />
+              .contact-info .contact-social p { <br />
+              margin-top: 23px; <br />
+              text-transform: uppercase; <br />
+              } <br />
+              .social-list { <br />
+              margin-top: 20px; <br />
+              display: flex; <br />
+              } <br />
+              .social-ellipse { <br />
+              border-radius: 100%; <br />
+              width: 50px; <br />
+              height: 50px; <br />
+              display: flex; <br />
+              justify-content: center; <br />
+              align-items: center; <br />
+              margin-right: 15px; <br />
+              } <br />
+              .behance-ellipse { <br />
+              background: #1769ff; <br />
+              } <br />
+              .instagram-ellipse { <br />
+              background: linear-gradient(180deg, #ffdd55 0%, #ff543e 51.56%,
+              #c837ab 100%); <br />
+              } <br />
+              .linkedin-ellipse { <br />
+              background: #006599; <br />
+              } <br />
+              .vk-ellipse { <br />
+              background: #5181b8; <br />
+              } <br />
+              .social-ellipse img { <br />
+              width: 30px; <br />
+              height: 30px; <br />
+              } <br />
+              .linkedin-ellipse img { <br />
+              width: 28px; <br />
+              height: 28px; <br />
+              } <br />
+              .button-page { <br />
+              display: flex; <br />
+              justify-content: center; <br />
+              } <br />
+              .button-page button { <br />
+              font-weight: 500; <br />
+              font-size: 16px; <br />
+              text-transform: uppercase; <br />
+              padding: 16px 35px; <br />
+              border: 1.5px solid #000; <br />
+              cursor: pointer; <br />
+              background-color: transparent; <br />
+              transition: 0.4s; <br />
+              } <br />
+              .button-page button:hover { <br />
+              transition: 0.4s; <br />
+              background-color: #000; <br />
+              border: 1.5px solid #bcb9b9; <br />
+              color: #fff; <br />
+              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); <br />
+              }
+            </p>
+          </div>
+          <h3>PHP code setup</h3>
+          <p>Now let's move on to the form handler, which is written in PHP.</p>
+          <div class="code-feedback-form"></div>
+          <h3>Additional features in JavaScript and jQuery</h3>
+          <p>
+            Form field handler + sending a message without reloading the page
+            (ajax)
+          </p>
+          <div class="code-feedback-form"></div>
+          <p>That's all. Connect the form, test and use. Good luck</p>
+        </div>
+
+        <!-- Blog article block END -->
+
+        <!-- Share buttons block -->
+
+        <div class="share-buttons">
+          <a
+            class="share-btn-fb"
+            href="http://www.facebook.com/sharer/sharer.php?s=100&p%5Btitle%5D=[TITLE]&p%5Bsummary%5D=[TEXT]&p%5Burl%5D=[LINK]&p%5Bimages%5D%5B0%5D=[IMAGE]"
+            target="_blank"
+            onclick="return Share.me(this);"
+          >
+            <div class="facebook share-block">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+          </a>
+
+          <a
+            href="https://plus.google.com/share?url=[LINK]"
+            target="_blank"
+            onclick="return Share.me(this);"
+          >
+            <div class="google share-block">
+              <i class="fa fa-google-plus" aria-hidden="true"></i>
+            </div>
+          </a>
+          <a
+            class="share-btn-in"
+            href="https://www.linkedin.com/cws/share?url=[LINK]"
+            target="_blank"
+            onclick="return Share.me(this);"
+          >
+            <div class="linkedin share-block">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </div>
+          </a>
+          <a
+            class="share-btn-p"
+            href="https://www.pinterest.com/pin/create/bookmarklet/?description=<?=get_the_title($id)?>&url=[LINK]"
+            target="_blank"
+            onclick="return Share.me(this);"
+          >
+            <div class="pinterest share-block">
+              <i class="fa fa-pinterest" aria-hidden="true"></i>
+            </div>
+          </a>
+          <a
+            class="share-btn-vk"
+            href="https://vk.com/share.php?url=[LINK]"
+            target="_blank"
+            onclick="return Share.me(this);"
+          >
+            <div class="vk share-block">
+              <i class="fa fa-vk" aria-hidden="true"></i>
+            </div>
+          </a>
+
+          <a
+            href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=[TITLE]&url=[LINK]"
+            target="_blank"
+            onclick="return Share.me(this)"
+          >
+            <div class="twitter share-block">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+        <!-- Share buttons block end -->
+      </div>
+    </div>
+    <!-- Footer block START -->
+
+    <div class="footer">
+      <div class="logo-footer" data-aos="zoom-in-up">
+        <a href="../index.html"
+          ><img src="../img/Logo.svg" alt="Logo Aimurzayev Amir"
+        /></a>
+      </div>
+      <nav class="footer-nav" data-aos="zoom-in-up" data-aos-delay="100">
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="../about-me.html" class="nav-item-link">About me</a>
+          </li>
+          <li class="nav-item">
+            <a href="../Portfolio.html" class="nav-item-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="../Blog.html" class="nav-item-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="../Contacts.html" class="nav-item-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <p data-aos="zoom-in-up" data-aos-delay="200">
+        © 2020 Amir Aimurzayev. All rights reserved.
+      </p>
+      <div class="footer-social" data-aos="zoom-in-up" data-aos-delay="300">
+        <a href="../" target="_blank"
+          ><img
+            src="../img/footer-icons/linkedin-footer.svg"
+            alt="linkedin Aimurzayev Amir"
+        /></a>
+        <a href="https://www.behance.net/Aimurzayev" target="_blank"
+          ><img
+            src="../img/footer-icons/behance-footer.svg"
+            alt="behance Aimurzayev Amir"
+        /></a>
+        <a href="https://vk.com/id140204225" target="_blank"
+          ><img src="../img/footer-icons/vk-footer.svg" alt="vk Aimurzayev Amir"
+        /></a>
+        <a href="https://www.instagram.com/amiraimurzayev/" target="_blank"
+          ><img
+            src="../img/footer-icons/instagram-footer.svg"
+            alt="instagram Aimurzayev Amir"
+        /></a>
+      </div>
+    </div>
+
+    <!-- Footer block END -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../libs/jquery/jquery-3.4.1.min.js"></script>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
