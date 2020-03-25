@@ -2174,13 +2174,65 @@ header {
 /* --------- Article page START ----------  */
 .code-feedback-form{
     overflow: scroll; 
+    overflow-x: hidden;
     width: 100%; 
     height: 300px; 
     padding: 5px; 
     border: solid 1px black; 
     margin-bottom: 20px;
+    background: #000
 }
-
+.code-feedback-form .span-indent0{
+  padding-left: 20px;
+}
+.code-feedback-form .span-indent{
+  padding-left: 40px;
+}
+.code-feedback-form .span-indent2{
+  padding-left: 60px;
+}
+.code-feedback-form .span-indent3{
+  padding-left: 80px;
+}
+.code-feedback-form .span-indent4{
+  padding-left: 100px;
+}
+.code-feedback-form .span-indent5{
+  padding-left: 120px;
+}
+.code-feedback-form .span-indent6{
+  padding-left: 140px;
+}
+.code-feedback-form .span-indent7{
+  padding-left: 160px;
+}
+.code-feedback-form .span-indent8{
+  padding-left: 180px;
+}
+.code-feedback-form .span-indent9{
+  padding-left: 200px;
+}
+.code-feedback-form .span-indent10{
+  padding-left: 220px;
+}
+.code-feedback-form .span-indent11{
+  padding-left: 240px;
+}
+.code-feedback-form .blue-code{
+  color: blue;
+}
+.code-feedback-form .violet-code{
+  color: violet;
+}
+.code-feedback-form .green-code{
+  color: green;
+}
+.code-feedback-form .yellow-code{
+  color: yellow;
+}
+.code-feedback-form .red-code{
+  color: red;
+}
 /* Share buttons START*/
 
 .share-buttons a{

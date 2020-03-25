@@ -29,11 +29,11 @@ $("#sendMail").on("click", function() {
 
 
   $.ajax({
-    url: "ajax/mail.php",
-    type: "POST",
+    url: 'ajax/mail.php',
+    type: 'POST',
     cache: false,
     data: { 'name': name, 'phone': phone, 'email': email, 'message': message },
-    dataType: "html",
+    dataType: 'html',
     beforeSend: function() {
       $("sendMail").prop("disabled", true);
     },
