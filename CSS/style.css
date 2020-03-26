@@ -851,7 +851,7 @@ header {
   .main-nav .nav-links .nav-item {
     margin-right: 0px;
   }
-  .main-nav .nav-links hr {
+  .main-nav .nav-links .menu-line {
     width: 100%;
   }
   .logo-desktop {
@@ -984,7 +984,7 @@ header {
   max-width: 270px;
   text-align: center;
   z-index: 2;
-  animation: side-text-anim 1s ease-out forwards 1s;
+  animation: side-text-anim 1s ease-out forwards 0.4s;
   opacity: 0;
 }
 .side-text h1 {
@@ -2239,7 +2239,7 @@ header {
   text-decoration: none;
 }
 .share-buttons{
-	max-width: 326px;
+	max-width: 330px;
   margin:0 auto;
 }
 .share-block{
