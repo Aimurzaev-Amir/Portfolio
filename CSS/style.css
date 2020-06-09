@@ -711,7 +711,7 @@ header {
     margin-right: 30px;
   }
   .about-me-page {
-    background-attachment: local; 
+    background-attachment: scroll; 
     background-size: 60%;
   }
   .about-intro,
@@ -775,7 +775,6 @@ header {
 @media (max-width: 750px) {
   .nav-overlay {
     animation: unset;
-    /* position: fixed; */
     top: 0;
     width: 100%;
     z-index: 9999;
