@@ -711,7 +711,7 @@ header {
     margin-right: 30px;
   }
   .about-me-page {
-    background-attachment: scroll; 
+    /* background-attachment: scroll;  */
     background-size: 60%;
   }
   .about-intro,
