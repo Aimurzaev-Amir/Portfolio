@@ -139,7 +139,8 @@ header {
 /* Main block intro START */
 
 .about-me-page {
-  height: 100vh;
+  height: 100vh; 
+  height: calc(var(--vh, 1vh) * 100);
   background-color: #fff;
   background-image: url(../img/main.png);
   background-attachment: fixed; 
@@ -712,7 +713,7 @@ header {
   }
   .about-me-page {
     background-attachment: scroll; 
-    height: 96vh;
+    /* height: 94vh; */
     background-size: 60%;
   }
   .about-intro,
