@@ -2144,8 +2144,6 @@ header {
   .footer {
     margin-top: 50px;
   }
-}
-@media (max-width: 585px) {
   .title h2 {
     padding-left: 20px;
     padding-right: 20px;
@@ -2191,6 +2189,52 @@ header {
     margin-right: 10px;
   }
 }
+/* @media (max-width: 585px) {
+  .title h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+  #button-r-margin {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .button-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills-cards {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .skill-card {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .skills-cards :last-child {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .contact-window {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .contact-me .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: unset;
+  }
+  .contact-me .contact-info {
+    margin-top: 21px;
+  }
+  .nav-item {
+    position: relative;
+    margin-right: 10px;
+  }
+} */
 @media (max-width: 410px) {
   .photos .photo {
     width: 140px;
