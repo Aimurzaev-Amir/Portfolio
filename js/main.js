@@ -1,16 +1,3 @@
-// // toggle for adaptive mobile devices
-// const hamburger = document.querySelector(".hamburger");
-// const navLinks = document.querySelector(".nav-links");
-// const links = document.querySelectorAll(".nav-links li");
-
-// hamburger.addEventListener("click", () => {
-//   navLinks.classList.toggle("open");
-//   links.forEach(link => {
-//     link.classList.toggle("fade");
-//   });
-// });
-
-
 // typing animation function on the main page
 $('document').ready(function(){
     var typed = new Typed ('#typed',{
@@ -32,8 +19,6 @@ $(function() {
     });
   });
   
-
-
 // Share article buttons
 Share = {
   me : function(el){
@@ -46,13 +31,11 @@ Share = {
   }
 };
 
-// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+// Setting the viewport height
 let vh = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty('--vh', `${vh}px`);
-
+// on viewport height change
 window.addEventListener('resize', () => {
-  // We execute the same script as before
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
