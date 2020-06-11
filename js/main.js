@@ -42,23 +42,24 @@ window.addEventListener('resize', () => {
 
 
 
+// Modal Gallery
 var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
+var slideIndex = 0;
+function changeSlideIndex(x) {
+  slideIndex = x;
+  console.log(slideIndex);
+  showModal(slideIndex);
+}
 var img = document.querySelectorAll(".myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img[0].onclick = function(){
+function showModal(slideIndex){
   modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+  modalImg.src = img[slideIndex].src;
+  captionText.innerHTML = img[slideIndex].alt;
 }
-console.log(img)
-
-// Get the <span> element that closes the modal
+// close modal gallery
 var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
