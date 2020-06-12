@@ -1,20 +1,9 @@
-// mobile devices animation turn off
-if (document.documentElement.clientWidth < 768) {
-  var skillCard = document.querySelectorAll(".skill-card");
-  for (var i = 0; i <= skillCard.length; i++) {
-    skillCard[i].removeAttribute("data-aos-delay");
-  }
-}
-
-// Setting the viewport height
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty("--vh", `${vh}px`);
-// on viewport height change
-window.addEventListener("resize", () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-});
-
+// if (document.documentElement.clientWidth < 768) {
+//   var skillCard = document.querySelectorAll(".skill-card");
+//   for (var i = 0; i <= skillCard.length; i++) {
+//     skillCard[i].removeAttribute("data-aos-delay");
+//   }
+// }
 // Scroll animation on the main page
 $(function () {
   $("#scroll-indicator").click(function () {
@@ -38,6 +27,15 @@ Share = {
     window.open(url, "", "toolbar=0,status=0,width=626,height=436");
   },
 };
+
+// Setting the viewport height
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty("--vh", `${vh}px`);
+// on viewport height change
+window.addEventListener("resize", () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+});
 
 // Modal Gallery
 var modal = document.getElementById("myModal");
